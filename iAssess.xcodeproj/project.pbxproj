@@ -17,6 +17,9 @@
 		28D7ACF80DDB3853001CB0EB /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* RootController.m */; };
 		AA095D2413D36CF7000A7CAD /* Sighting.m in Sources */ = {isa = PBXBuildFile; fileRef = AA095D2313D36CF7000A7CAD /* Sighting.m */; };
 		AA095D2C13D36EED000A7CAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA095D2B13D36EED000A7CAD /* CoreLocation.framework */; };
+		AA095DAD13D38167000A7CAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA095DAC13D38167000A7CAD /* MapKit.framework */; };
+		AA095DB713D38292000A7CAD /* GetPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = AA095DB513D38292000A7CAD /* GetPhoto.m */; };
+		AA095DB813D38292000A7CAD /* GetPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA095DB613D38292000A7CAD /* GetPhoto.xib */; };
 		AA5977C013D341C600A994CB /* AddSightingController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5977BE13D341C600A994CB /* AddSightingController.m */; };
 		AA5977C113D341C600A994CB /* AddSightingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5977BF13D341C600A994CB /* AddSightingController.xib */; };
 		AA59787613D3596A00A994CB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AA59786D13D3596A00A994CB /* NSObject+SBJSON.m */; };
@@ -43,6 +46,10 @@
 		AA095D2213D36CF7000A7CAD /* Sighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sighting.h; sourceTree = "<group>"; };
 		AA095D2313D36CF7000A7CAD /* Sighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sighting.m; sourceTree = "<group>"; };
 		AA095D2B13D36EED000A7CAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AA095DAC13D38167000A7CAD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AA095DB413D38292000A7CAD /* GetPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPhoto.h; sourceTree = "<group>"; };
+		AA095DB513D38292000A7CAD /* GetPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPhoto.m; sourceTree = "<group>"; };
+		AA095DB613D38292000A7CAD /* GetPhoto.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GetPhoto.xib; path = Classes/GetPhoto.xib; sourceTree = "<group>"; };
 		AA5977BD13D341C600A994CB /* AddSightingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSightingController.h; sourceTree = "<group>"; };
 		AA5977BE13D341C600A994CB /* AddSightingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSightingController.m; sourceTree = "<group>"; };
 		AA5977BF13D341C600A994CB /* AddSightingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AddSightingController.xib; path = Classes/AddSightingController.xib; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				AA095D2C13D36EED000A7CAD /* CoreLocation.framework in Frameworks */,
+				AA095DAD13D38167000A7CAD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,8 @@
 				AA5977BE13D341C600A994CB /* AddSightingController.m */,
 				AA095D2213D36CF7000A7CAD /* Sighting.h */,
 				AA095D2313D36CF7000A7CAD /* Sighting.m */,
+				AA095DB413D38292000A7CAD /* GetPhoto.h */,
+				AA095DB513D38292000A7CAD /* GetPhoto.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -123,6 +133,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA095DB613D38292000A7CAD /* GetPhoto.xib */,
 				AA5977BF13D341C600A994CB /* AddSightingController.xib */,
 				2899E5210DE3E06400AC0155 /* RootController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -137,6 +148,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				AA095DAC13D38167000A7CAD /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +223,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* RootController.xib in Resources */,
 				AA5977C113D341C600A994CB /* AddSightingController.xib in Resources */,
+				AA095DB813D38292000A7CAD /* GetPhoto.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +244,7 @@
 				AA59787913D3596A00A994CB /* SBJsonParser.m in Sources */,
 				AA59787A13D3596A00A994CB /* SBJsonWriter.m in Sources */,
 				AA095D2413D36CF7000A7CAD /* Sighting.m in Sources */,
+				AA095DB713D38292000A7CAD /* GetPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

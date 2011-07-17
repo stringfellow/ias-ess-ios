@@ -12,11 +12,15 @@
 @interface AddSightingController : UIViewController 
 	<
 		UIPickerViewDataSource, UIPickerViewDelegate,
-		CLLocationManagerDelegate
+		CLLocationManagerDelegate,
+		UIImagePickerControllerDelegate,
+		UINavigationControllerDelegate
 	> {
 	
 	UIPickerView *taxaPicker;
 	CLLocationManager *locationManager;
+	UIImagePickerController *imagePicker;
+	UIImageView *imageView;
 	NSMutableArray *taxa;
 	NSMutableData *responseData;
 	Sighting *newSighting;
@@ -24,8 +28,12 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIPickerView *taxaPicker;
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UIImagePickerController *imagePicker;
 @property (nonatomic, retain) IBOutlet Sighting *newSighting;
 
+
 - (void) getTaxa;
+- (IBAction)addImage:(id)sender;
 
 @end

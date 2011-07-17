@@ -17,6 +17,8 @@
 
 @synthesize taxaPicker;
 @synthesize newSighting;
+@synthesize imageView;
+@synthesize imagePicker;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -44,6 +46,12 @@
 	} else {
 		NSLog(@"No location service :(");
 	}
+	
+	imagePicker = [[UIImagePickerController alloc] init];
+	imagePicker.allowsEditing = YES;
+	imagePicker.delegate = self;
+	imagePicker.sourceType = 
+		UIImagePickerControllerSourceTypeSavedPhotosAlbum;
 	
 	if ([taxa count] == 0) {
 		[self getTaxa];
@@ -88,6 +96,10 @@
 	[[NSURLConnection alloc]
 	 initWithRequest:request delegate:self];
 	
+}
+
+- (IBAction)addImage:(id)sender {
+	[self presentModalViewController:imagePicker animated:YES];
 }
 
 #pragma mark NSURLConnection Methods
@@ -148,8 +160,10 @@
 }
 
 
-- (NSString *)pickerView:(UIPickerView *)pv titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-//	NSLog(@"row %@: %@", row, taxa);
+- (NSString *)pickerView:(UIPickerView *)pv
+	titleForRow:(NSInteger)row
+	forComponent:(NSInteger)component
+{
 	return [taxa objectAtIndex:row];
 }
 
@@ -160,7 +174,36 @@
 	didUpdateToLocation:(CLLocation *)newLocation
 	fromLocation:(CLLocation *)oldLocation
 {
-	NSLog(@"Location: %@", newLocation);
+	newSighting.location = newLocation;
+	newSighting.dateTime = newLocation.timestamp;
 }
+
+- (void)locationManager:(CLLocationManager *)manager
+    didFailWithError:(NSError *)error
+{
+	NSLog(@"Location error: %@", error);
+	UIAlertView *alert = [[UIAlertView alloc]
+						  initWithTitle:@"Location error"
+						  message:@"Couldn't get location."
+						  delegate:self
+						  cancelButtonTitle:nil
+						  otherButtonTitles:@"OK", nil];
+	
+	[alert show];
+	[alert autorelease];
+	
+}
+
+#pragma mark UIImagePickerControllerDelegate Methods
+
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+	didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+	[self dismissModalViewControllerAnimated:YES];
+	newSighting.photo = [info objectForKey:@"UIImagePickerControllerEditedImage"];
+	imageView.image = newSighting.photo;
+}
+
 
 @end
