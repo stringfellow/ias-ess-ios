@@ -16,6 +16,7 @@
 @synthesize navController;
 @synthesize taxa;
 
+NSString * const API_TAXA_LIST = @"http://ias-ess.appspot.com/api/taxa/list";
 
 #pragma mark -
 #pragma mark Application lifecycle

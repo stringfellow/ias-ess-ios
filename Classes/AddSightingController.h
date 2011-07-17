@@ -7,17 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Sighting.h"
 
-
-@interface AddSightingController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
+@interface AddSightingController : UIViewController 
+	<
+		UIPickerViewDataSource, UIPickerViewDelegate,
+		CLLocationManagerDelegate
+	> {
 	
 	UIPickerView *taxaPicker;
+	CLLocationManager *locationManager;
 	NSMutableArray *taxa;
 	NSMutableData *responseData;
+	Sighting *newSighting;
 
 }
 
 @property (nonatomic, retain) IBOutlet UIPickerView *taxaPicker;
+@property (nonatomic, retain) IBOutlet Sighting *newSighting;
 
 - (void) getTaxa;
 

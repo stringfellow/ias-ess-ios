@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const API_TAXA_LIST;
+
 @class RootController;
 
 @interface iAssessDelegate : NSObject <UIApplicationDelegate> {

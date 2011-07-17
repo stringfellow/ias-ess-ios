@@ -6,16 +6,17 @@
 //  Copyright 2011 Synfinity (steve@synfinity.net). All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
 #import "AddSightingController.h"
 #import "iAssessDelegate.h"
 #import "JSON/JSON.h"
+#import "Sighting.h"
 
 
 @implementation AddSightingController
 
 @synthesize taxaPicker;
-
-
+@synthesize newSighting;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -35,7 +36,18 @@
 	(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
 	taxa = delegate.taxa;
 	responseData = [[NSMutableData data] retain];
-	[self getTaxa];
+	newSighting = [[Sighting alloc] init];
+	locationManager = [[CLLocationManager alloc] init];
+	locationManager.delegate = self;
+	if ([CLLocationManager locationServicesEnabled]) {
+		[locationManager startUpdatingLocation];
+	} else {
+		NSLog(@"No location service :(");
+	}
+	
+	if ([taxa count] == 0) {
+		[self getTaxa];
+	}
     [super viewDidLoad];
 }
 
@@ -63,14 +75,14 @@
 
 
 - (void)dealloc {
-	[taxa dealloc];
+	[newSighting dealloc];
     [super dealloc];
 }
 
 # pragma mark My Stuff
 
 - (void)getTaxa {
-	NSString *string = [NSString stringWithFormat:@"http://ias-ess.appspot.com/api/taxa/list"];
+	NSString *string = [NSString stringWithString:API_TAXA_LIST];
 	NSURL *url = [[NSURL URLWithString:string] retain];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	[[NSURLConnection alloc]
@@ -83,8 +95,6 @@
 - (void)connection:(NSURLConnection *)connection
 		didReceiveData:(NSData *)data
 {
-	
-	//NSDictionary *dictionary = [jsonString JSONValue];
 	[responseData appendData:data];
 }
 
@@ -143,5 +153,14 @@
 	return [taxa objectAtIndex:row];
 }
 
+
+#pragma mark CLLocationManagerDelegate Methods
+
+- (void)locationManager:(CLLocationManager *)manager
+	didUpdateToLocation:(CLLocation *)newLocation
+	fromLocation:(CLLocation *)oldLocation
+{
+	NSLog(@"Location: %@", newLocation);
+}
 
 @end
