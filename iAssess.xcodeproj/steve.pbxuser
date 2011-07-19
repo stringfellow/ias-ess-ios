@@ -191,6 +191,18 @@
 			AA04034413D61D6200BBB312 /* PBXTextBookmark */ = AA04034413D61D6200BBB312 /* PBXTextBookmark */;
 			AA04034513D61D6200BBB312 /* PBXTextBookmark */ = AA04034513D61D6200BBB312 /* PBXTextBookmark */;
 			AA04034813D61D7B00BBB312 /* PBXTextBookmark */ = AA04034813D61D7B00BBB312 /* PBXTextBookmark */;
+			AA04034A13D61ED800BBB312 /* PBXTextBookmark */ = AA04034A13D61ED800BBB312 /* PBXTextBookmark */;
+			AA04034B13D61ED800BBB312 /* PBXTextBookmark */ = AA04034B13D61ED800BBB312 /* PBXTextBookmark */;
+			AA04034C13D61ED800BBB312 /* PBXTextBookmark */ = AA04034C13D61ED800BBB312 /* PBXTextBookmark */;
+			AA04035213D61F3100BBB312 /* PBXTextBookmark */ = AA04035213D61F3100BBB312 /* PBXTextBookmark */;
+			AA04035313D61F3700BBB312 /* PBXTextBookmark */ = AA04035313D61F3700BBB312 /* PBXTextBookmark */;
+			AA04035413D61F3D00BBB312 /* PBXTextBookmark */ = AA04035413D61F3D00BBB312 /* PBXTextBookmark */;
+			AA04035513D61F3D00BBB312 /* PBXTextBookmark */ = AA04035513D61F3D00BBB312 /* PBXTextBookmark */;
+			AA04035613D61F3F00BBB312 /* PBXTextBookmark */ = AA04035613D61F3F00BBB312 /* PBXTextBookmark */;
+			AA04035913D620C500BBB312 /* PBXTextBookmark */ = AA04035913D620C500BBB312 /* PBXTextBookmark */;
+			AA04035A13D620C500BBB312 /* PBXTextBookmark */ = AA04035A13D620C500BBB312 /* PBXTextBookmark */;
+			AA04035B13D620C500BBB312 /* PBXTextBookmark */ = AA04035B13D620C500BBB312 /* PBXTextBookmark */;
+			AA04035C13D6213500BBB312 /* PBXTextBookmark */ = AA04035C13D6213500BBB312 /* PBXTextBookmark */;
 			AA095D6013D3759E000A7CAD = AA095D6013D3759E000A7CAD /* PBXTextBookmark */;
 			AA095D6113D3759E000A7CAD = AA095D6113D3759E000A7CAD /* PBXTextBookmark */;
 			AA095D6D13D37669000A7CAD = AA095D6D13D37669000A7CAD /* PBXTextBookmark */;
@@ -243,17 +255,18 @@
 	};
 	AA04028313D6058E00BBB312 /* GetPhotoController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1118, 572}}";
-			sepNavSelRange = "{754, 0}";
-			sepNavVisRange = "{0, 950}";
+			sepNavIntBoundsRect = "{{0, 0}, {1118, 585}}";
+			sepNavSelRange = "{824, 0}";
+			sepNavVisRange = "{30, 1009}";
 			sepNavWindowFrame = "{{61, 70}, {1214, 761}}";
 		};
 	};
 	AA04028413D6058E00BBB312 /* GetPhotoController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1391}}";
-			sepNavSelRange = "{363, 0}";
-			sepNavVisRange = "{0, 1059}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1352}}";
+			sepNavSelRange = "{2421, 0}";
+			sepNavVisRange = "{1668, 843}";
+			sepNavWindowFrame = "{{84, 49}, {1214, 761}}";
 		};
 	};
 	AA04028E13D608A100BBB312 /* PBXTextBookmark */ = {
@@ -331,8 +344,8 @@
 		comments = "Expected ']' before 'OBJC_STRING' token";
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 22;
+		rLen = 0;
+		rLoc = 19;
 		rType = 1;
 	};
 	AA04029613D608A100BBB312 /* PBXTextBookmark */ = {
@@ -340,7 +353,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 23";
 		rLen = 0;
-		rLoc = 366;
+		rLoc = 364;
 		rType = 0;
 		vrLen = 1177;
 		vrLoc = 151;
@@ -360,7 +373,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 23";
 		rLen = 0;
-		rLoc = 366;
+		rLoc = 364;
 		rType = 0;
 		vrLen = 947;
 		vrLoc = 151;
@@ -370,7 +383,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 22";
 		rLen = 0;
-		rLoc = 366;
+		rLoc = 364;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 0;
@@ -381,7 +394,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 106;
+		rLoc = 102;
 		rType = 1;
 	};
 	AA04029F13D6090100BBB312 /* PBXTextBookmark */ = {
@@ -400,7 +413,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 41;
+		rLoc = 34;
 		rType = 1;
 	};
 	AA0402A313D609EB00BBB312 /* PBXTextBookmark */ = {
@@ -408,7 +421,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 91";
 		rLen = 0;
-		rLoc = 2455;
+		rLoc = 2421;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 1432;
@@ -418,7 +431,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 91";
 		rLen = 0;
-		rLoc = 2455;
+		rLoc = 2421;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 1432;
@@ -428,7 +441,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 93";
 		rLen = 0;
-		rLoc = 2537;
+		rLoc = 2421;
 		rType = 0;
 		vrLen = 1007;
 		vrLoc = 1432;
@@ -438,7 +451,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 93";
 		rLen = 0;
-		rLoc = 2537;
+		rLoc = 2421;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 1432;
@@ -597,7 +610,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 95";
 		rLen = 0;
-		rLoc = 2633;
+		rLoc = 2499;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 1576;
@@ -607,7 +620,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 85";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 1576;
@@ -627,7 +640,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 31";
 		rLen = 0;
-		rLoc = 818;
+		rLoc = 853;
 		rType = 0;
 		vrLen = 715;
 		vrLoc = 0;
@@ -637,7 +650,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 31";
 		rLen = 0;
-		rLoc = 818;
+		rLoc = 853;
 		rType = 0;
 		vrLen = 715;
 		vrLoc = 0;
@@ -677,7 +690,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 25";
 		rLen = 0;
-		rLoc = 366;
+		rLoc = 364;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 233;
@@ -697,7 +710,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 98";
 		rLen = 77;
-		rLoc = 2538;
+		rLoc = 2422;
 		rType = 0;
 		vrLen = 765;
 		vrLoc = 1774;
@@ -747,7 +760,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 98";
 		rLen = 77;
-		rLoc = 2538;
+		rLoc = 2422;
 		rType = 0;
 		vrLen = 830;
 		vrLoc = 1709;
@@ -757,7 +770,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 868;
 		vrLoc = 1709;
@@ -767,7 +780,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 868;
 		vrLoc = 1709;
@@ -777,7 +790,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 1536;
@@ -797,7 +810,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 1709;
@@ -807,7 +820,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 85";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 1667;
@@ -817,7 +830,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 85";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 0;
@@ -827,7 +840,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 31";
 		rLen = 0;
-		rLoc = 818;
+		rLoc = 853;
 		rType = 0;
 		vrLen = 715;
 		vrLoc = 0;
@@ -837,7 +850,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 39";
 		rLen = 0;
-		rLoc = 1003;
+		rLoc = 1038;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 0;
@@ -847,7 +860,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 38";
 		rLen = 0;
-		rLoc = 1003;
+		rLoc = 1038;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 0;
@@ -867,7 +880,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 85";
 		rLen = 0;
-		rLoc = 2148;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 0;
@@ -877,7 +890,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 98";
 		rLen = 0;
-		rLoc = 2633;
+		rLoc = 2499;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 1716;
@@ -887,7 +900,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 38";
 		rLen = 0;
-		rLoc = 1003;
+		rLoc = 1038;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 0;
@@ -897,7 +910,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 98";
 		rLen = 0;
-		rLoc = 2633;
+		rLoc = 2499;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 1679;
@@ -947,7 +960,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 98";
 		rLen = 0;
-		rLoc = 2633;
+		rLoc = 2499;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 1679;
@@ -957,7 +970,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2231;
+		rLoc = 2197;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 1622;
@@ -967,7 +980,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 38";
 		rLen = 0;
-		rLoc = 1003;
+		rLoc = 1038;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 0;
@@ -977,7 +990,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2231;
+		rLoc = 2197;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 1622;
@@ -987,7 +1000,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 99";
 		rLen = 0;
-		rLoc = 2633;
+		rLoc = 2499;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 1622;
@@ -997,7 +1010,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 84";
 		rLen = 0;
-		rLoc = 2118;
+		rLoc = 2084;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 1622;
@@ -1007,7 +1020,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 21";
 		rLen = 0;
-		rLoc = 368;
+		rLoc = 364;
 		rType = 0;
 		vrLen = 1061;
 		vrLoc = 0;
@@ -1115,7 +1128,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 38";
 		rLen = 0;
-		rLoc = 1003;
+		rLoc = 1038;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 0;
@@ -1215,7 +1228,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 40";
 		rLen = 111;
-		rLoc = 886;
+		rLoc = 921;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 0;
@@ -1225,7 +1238,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 23;
-		rLoc = 2165;
+		rLoc = 2131;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 1716;
@@ -1235,7 +1248,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2158;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 1716;
@@ -1245,7 +1258,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 87";
 		rLen = 0;
-		rLoc = 2214;
+		rLoc = 2180;
 		rType = 0;
 		vrLen = 901;
 		vrLoc = 1716;
@@ -1266,7 +1279,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 86;
+		rLoc = 84;
 		rType = 1;
 	};
 	AA04033B13D61CE800BBB312 /* PBXTextBookmark */ = {
@@ -1274,7 +1287,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2149;
+		rLoc = 2115;
 		rType = 0;
 		vrLen = 939;
 		vrLoc = 1679;
@@ -1304,7 +1317,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2149;
+		rLoc = 2115;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 1588;
@@ -1314,7 +1327,7 @@
 		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
 		name = "GetPhotoController.h: 40";
 		rLen = 111;
-		rLoc = 886;
+		rLoc = 921;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 0;
@@ -1344,7 +1357,7 @@
 		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
 		name = "GetPhotoController.m: 86";
 		rLen = 0;
-		rLoc = 2149;
+		rLoc = 2115;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 1588;
@@ -1368,6 +1381,126 @@
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 0;
+	};
+	AA04034A13D61ED800BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 88";
+		rLen = 0;
+		rLoc = 2019;
+		rType = 0;
+		vrLen = 1049;
+		vrLoc = 1755;
+	};
+	AA04034B13D61ED800BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 31";
+		rLen = 0;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 18;
+	};
+	AA04034C13D61ED800BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 34";
+		rLen = 0;
+		rLoc = 824;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 18;
+	};
+	AA04035213D61F3100BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 34";
+		rLen = 0;
+		rLoc = 824;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 18;
+	};
+	AA04035313D61F3700BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 34";
+		rLen = 0;
+		rLoc = 824;
+		rType = 0;
+		vrLen = 1021;
+		vrLoc = 18;
+	};
+	AA04035413D61F3D00BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 92";
+		rLen = 0;
+		rLoc = 2114;
+		rType = 0;
+		vrLen = 771;
+		vrLoc = 1204;
+	};
+	AA04035513D61F3D00BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 34";
+		rLen = 0;
+		rLoc = 824;
+		rType = 0;
+		vrLen = 842;
+		vrLoc = 197;
+	};
+	AA04035613D61F3F00BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 34";
+		rLen = 0;
+		rLoc = 824;
+		rType = 0;
+		vrLen = 1021;
+		vrLoc = 18;
+	};
+	AA04035913D620C500BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 34";
+		rLen = 0;
+		rLoc = 824;
+		rType = 0;
+		vrLen = 1009;
+		vrLoc = 30;
+	};
+	AA04035A13D620C500BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 88";
+		rLen = 0;
+		rLoc = 2019;
+		rType = 0;
+		vrLen = 1074;
+		vrLoc = 1731;
+	};
+	AA04035B13D620C500BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 43";
+		rLen = 0;
+		rLoc = 880;
+		rType = 0;
+		vrLen = 1240;
+		vrLoc = 561;
+	};
+	AA04035C13D6213500BBB312 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 96";
+		rLen = 0;
+		rLoc = 2421;
+		rType = 0;
+		vrLen = 843;
+		vrLoc = 1668;
 	};
 	AA095D2213D36CF7000A7CAD /* Sighting.h */ = {
 		uiCtxt = {

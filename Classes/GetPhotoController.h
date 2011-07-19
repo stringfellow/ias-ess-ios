@@ -31,6 +31,7 @@
 @property (assign, nonatomic) id <GetPhotoDelegate> delegate;
 
 - (IBAction)showPicker:(id)sender;
+- (IBAction)showCamera:(id)sender;
 - (IBAction)done:(id)sender;
 
 

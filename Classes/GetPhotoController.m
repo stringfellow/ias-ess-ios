@@ -19,13 +19,6 @@
 @synthesize delegate;
 
 
-//- (GetPhotoController*)initWithSighting:(Sighting*)aSighting {
-//	if((self = [super initWithNibName:@"GetPhotoController" bundle:nil])) {
-//		self.newSighting = aSighting;
-//	}
-//	return self;
-//}
-
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -40,12 +33,9 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	
 	imagePicker = [[UIImagePickerController alloc] init];
 	imagePicker.allowsEditing = YES;
 	imagePicker.delegate = self;
-	imagePicker.sourceType = 
-		UIImagePickerControllerSourceTypeSavedPhotosAlbum;
 	
     [super viewDidLoad];
 }
@@ -80,6 +70,14 @@
 #pragma mark My Stuff
 
 - (IBAction)showPicker:(id)sender {
+	imagePicker.sourceType = 
+	UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+	[self presentModalViewController:imagePicker animated:YES];
+}
+
+- (IBAction)showCamera:(id)sender {
+	imagePicker.sourceType = 
+	UIImagePickerControllerSourceTypeCamera;
 	[self presentModalViewController:imagePicker animated:YES];
 }
 
@@ -96,9 +94,7 @@
 didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
 	[self dismissModalViewControllerAnimated:YES];
-	//newSighting.photo = [info objectForKey:@"UIImagePickerControllerEditedImage"];
 	imageView.image = [info objectForKey:@"UIImagePickerControllerEditedImage"];
-	NSLog(@"TEST!");
 }
 
 
