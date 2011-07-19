@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "Sighting.h"
+#import "GetPhotoController.h"
 
 @interface AddSightingController : UIViewController 
 	<
 		UIPickerViewDataSource, UIPickerViewDelegate,
 		CLLocationManagerDelegate,
 		UIImagePickerControllerDelegate,
-		UINavigationControllerDelegate
+		UINavigationControllerDelegate,
+		GetPhotoDelegate
 	> {
 	
 	UIPickerView *taxaPicker;
@@ -35,5 +37,6 @@
 
 - (void) getTaxa;
 - (IBAction)addImage:(id)sender;
+- (IBAction)doneImage:(id)sender;
 
 @end

@@ -9,6 +9,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "AddSightingController.h"
 #import "iAssessDelegate.h"
+#import "GetPhotoController.h"
 #import "JSON/JSON.h"
 #import "Sighting.h"
 
@@ -99,7 +100,16 @@
 }
 
 - (IBAction)addImage:(id)sender {
-	[self presentModalViewController:imagePicker animated:YES];
+	GetPhotoController *gp = [[GetPhotoController alloc]
+							  initWithNibName:@"GetPhotoController" bundle:nil];
+	[gp setDelegate:self];
+	[self presentModalViewController:gp animated:YES];
+	[gp release];
+}
+
+- (IBAction)doneImage:(id)sender {
+	NSLog(@"Totes returned!");
+	imageView.image = newSighting.photo;
 }
 
 #pragma mark NSURLConnection Methods
@@ -194,15 +204,16 @@
 	
 }
 
-#pragma mark UIImagePickerControllerDelegate Methods
+#pragma mark GetPhotoDelegate Methods
 
 
-- (void)imagePickerController:(UIImagePickerController *)picker
-	didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
+- (void)photoGetViewController:(GetPhotoController *)photoGetController
+				   didGetPhoto:(UIImage *)photo {
+	if (photo) {
+		newSighting.photo = photo;
+		imageView.image = newSighting.photo;
+	}
 	[self dismissModalViewControllerAnimated:YES];
-	newSighting.photo = [info objectForKey:@"UIImagePickerControllerEditedImage"];
-	imageView.image = newSighting.photo;
 }
 
 
