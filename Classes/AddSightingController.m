@@ -17,9 +17,21 @@
 @implementation AddSightingController
 
 @synthesize taxaPicker;
-@synthesize newSighting;
+@synthesize taxaCell;
+
 @synthesize imageView;
 @synthesize imagePicker;
+@synthesize imageCell;
+
+@synthesize mapView;
+@synthesize locationCell;
+
+@synthesize tableView;
+
+@synthesize newSighting;
+
+
+
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -47,7 +59,7 @@
 	} else {
 		NSLog(@"No location service :(");
 	}
-	
+	self.title = @"Add sighting";
 	imagePicker = [[UIImagePickerController alloc] init];
 	imagePicker.allowsEditing = YES;
 	imagePicker.delegate = self;
@@ -99,6 +111,44 @@
 	
 }
 
+- (IBAction)pickTaxa:(id)sender {
+	/* first create a UIActionSheet, where you define a title, delegate and a button to close the sheet again */
+	UIActionSheet *actionSheet = [
+								  [UIActionSheet alloc]
+									initWithTitle:@"Select taxon"
+									delegate:self
+								    cancelButtonTitle:@"Done"
+								    destructiveButtonTitle:nil otherButtonTitles:nil];
+
+
+	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+	
+	/* Add the UIPickerView to the UIActionSheet */
+	[actionSheet addSubview:taxaPicker];
+	
+	[taxaPicker selectRow:0 inComponent:0 animated:NO];
+	UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Close"]];
+	closeButton.momentary = YES; 
+	closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+	closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
+	closeButton.tintColor = [UIColor blackColor];
+	[closeButton addTarget:self action:@selector(dismissActionSheet:) forControlEvents:UIControlEventValueChanged];
+	[actionSheet addSubview:closeButton];
+	
+	/* Add the UIActionSheet to the view */
+	[actionSheet showInView:self.view];
+	
+	/* Make sure the UIActionSheet is big enough to fit your UIPickerView and it's buttons */
+	[actionSheet setBounds:CGRectMake(0,0, 320, 300)];
+	
+	/* clean up */
+	[actionSheet release];
+}
+
+- (IBAction)dismissActionSheet:(id)sender {
+	NSLog(@"DISMISS");
+}
+
 - (IBAction)addImage:(id)sender {
 	GetPhotoController *gp = [[GetPhotoController alloc]
 							  initWithNibName:@"GetPhotoController" bundle:nil];
@@ -108,7 +158,6 @@
 }
 
 - (IBAction)doneImage:(id)sender {
-	NSLog(@"Totes returned!");
 	imageView.image = newSighting.photo;
 }
 
@@ -186,6 +235,8 @@
 {
 	newSighting.location = newLocation;
 	newSighting.dateTime = newLocation.timestamp;
+	[mapView setCenterCoordinate:newLocation.coordinate animated:YES];
+
 }
 
 - (void)locationManager:(CLLocationManager *)manager
@@ -216,5 +267,48 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
+
+#pragma mark UITableViewDataSource Delegate Methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCell *cell = nil;
+	
+	switch ( indexPath.row ){
+		case 0: cell = imageCell;
+			break;
+		case 1: cell = taxaCell;
+			break;
+		case 2: cell = locationCell;
+			break;
+	}
+	
+	return cell;
+}
+
+
+#pragma mark UITableViewDelegate Methods
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	switch ( indexPath.row ){
+		case 0: return 210;
+		case 1: return 44;
+		case 2: return 210;
+	}
+	return 44;
+}
+
+#pragma mark UIActionSheet Methods
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    newSighting.taxonName = @"Dave";//[taxaPicker 
+}
 
 @end
