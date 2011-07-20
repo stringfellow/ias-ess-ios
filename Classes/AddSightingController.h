@@ -29,7 +29,8 @@
 	UIImagePickerController *imagePicker;
 	UIImageView *imageView;
 	UITableView *tableView;
-		
+	UILabel *taxaLabel;
+	
 	UITableViewCell *imageCell;
 	UITableViewCell *taxaCell;
 	UITableViewCell *locationCell;
@@ -46,6 +47,7 @@
 @property (nonatomic, retain) IBOutlet UIPickerView *taxaPicker;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) IBOutlet UILabel *taxaLabel;
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
 
 @property (nonatomic, retain) IBOutlet UITableViewCell *imageCell;
@@ -60,5 +62,6 @@
 - (IBAction)addImage:(id)sender;
 - (IBAction)doneImage:(id)sender;
 - (IBAction)pickTaxa:(id)sender;
+- (IBAction)updateUIInfo;
 
 @end

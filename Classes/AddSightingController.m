@@ -22,6 +22,7 @@
 @synthesize imageView;
 @synthesize imagePicker;
 @synthesize imageCell;
+@synthesize taxaLabel;
 
 @synthesize mapView;
 @synthesize locationCell;
@@ -59,6 +60,13 @@
 	} else {
 		NSLog(@"No location service :(");
 	}
+	
+	taxaPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0,100, 320, 216)];
+	taxaPicker.delegate = self;
+	taxaPicker.dataSource = self;
+	taxaPicker.showsSelectionIndicator = YES;
+	
+	
 	self.title = @"Add sighting";
 	imagePicker = [[UIImagePickerController alloc] init];
 	imagePicker.allowsEditing = YES;
@@ -123,23 +131,24 @@
 
 	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
 	
-	/* Add the UIPickerView to the UIActionSheet */
-	[actionSheet addSubview:taxaPicker];
-	
-	[taxaPicker selectRow:0 inComponent:0 animated:NO];
-	UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Close"]];
-	closeButton.momentary = YES; 
-	closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
-	closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
-	closeButton.tintColor = [UIColor blackColor];
-	[closeButton addTarget:self action:@selector(dismissActionSheet:) forControlEvents:UIControlEventValueChanged];
-	[actionSheet addSubview:closeButton];
+	//UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Close"]];
+//	closeButton.momentary = YES; 
+//	closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+//	closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
+//	closeButton.tintColor = [UIColor blackColor];
+//	[closeButton addTarget:self action:@selector(dismissActionSheet:) forControlEvents:UIControlEventValueChanged];
+	//[actionSheet addSubview:closeButton];
 	
 	/* Add the UIActionSheet to the view */
 	[actionSheet showInView:self.view];
 	
 	/* Make sure the UIActionSheet is big enough to fit your UIPickerView and it's buttons */
-	[actionSheet setBounds:CGRectMake(0,0, 320, 300)];
+	[actionSheet setBounds:CGRectMake(0, 0, 320, 521)];
+	
+	/* Add the UIPickerView to the UIActionSheet */
+	[actionSheet addSubview:taxaPicker];
+	
+	[taxaPicker selectRow:0 inComponent:0 animated:NO];
 	
 	/* clean up */
 	[actionSheet release];
@@ -156,6 +165,14 @@
 	[self presentModalViewController:gp animated:YES];
 	[gp release];
 }
+
+- (void)updateUIInfo {
+	[mapView setCenterCoordinate:newSighting.location.coordinate animated:YES];
+	//NSLog(@"Location: %@", newSighting.location.coordinate);
+	imageView.image = newSighting.photo;
+	taxaLabel.text = newSighting.taxonName;
+}
+
 
 - (IBAction)doneImage:(id)sender {
 	imageView.image = newSighting.photo;
@@ -235,7 +252,7 @@
 {
 	newSighting.location = newLocation;
 	newSighting.dateTime = newLocation.timestamp;
-	[mapView setCenterCoordinate:newLocation.coordinate animated:YES];
+	[self updateUIInfo];
 
 }
 
@@ -262,7 +279,7 @@
 				   didGetPhoto:(UIImage *)photo {
 	if (photo) {
 		newSighting.photo = photo;
-		imageView.image = newSighting.photo;
+		[self updateUIInfo];
 	}
 	[self dismissModalViewControllerAnimated:YES];
 }
@@ -308,7 +325,8 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    newSighting.taxonName = @"Dave";//[taxaPicker 
+    newSighting.taxonName = @"Dave";
+	[self updateUIInfo];
 }
 
 @end
