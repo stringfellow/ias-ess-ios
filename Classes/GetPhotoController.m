@@ -94,6 +94,8 @@
 didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
 	[self dismissModalViewControllerAnimated:YES];
+	//[picker release];
+	NSLog(@"%@", info);
 	imageView.image = [info objectForKey:@"UIImagePickerControllerEditedImage"];
 }
 

@@ -31,6 +31,8 @@
 
 @synthesize newSighting;
 
+@synthesize currentURL;
+
 
 
 
@@ -49,7 +51,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	iAssessDelegate *delegate =
-	(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
+		(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
 	taxa = delegate.taxa;
 	responseData = [[NSMutableData data] retain];
 	newSighting = [[Sighting alloc] init];
@@ -61,7 +63,7 @@
 		NSLog(@"No location service :(");
 	}
 	
-	taxaPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0,100, 320, 216)];
+	taxaPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 100, 320, 216)];
 	taxaPicker.delegate = self;
 	taxaPicker.dataSource = self;
 	taxaPicker.showsSelectionIndicator = YES;
@@ -73,6 +75,9 @@
 	imagePicker.delegate = self;
 	imagePicker.sourceType = 
 		UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+	
+	[self setEditing:YES animated:YES];
+	self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
 	if ([taxa count] == 0) {
 		[self getTaxa];
@@ -108,15 +113,28 @@
     [super dealloc];
 }
 
+# pragma mark UIViewControllerDataSource
+
+- (void)setEditing:(BOOL)editing animated:(BOOL) animated {
+
+	if (! editing) {
+		[self uploadImage];
+		
+		iAssessDelegate *delegate =
+			(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
+		[delegate.navController popViewControllerAnimated:YES];
+	}
+	[super setEditing:editing animated:animated];
+}
+
+
 # pragma mark My Stuff
 
 - (void)getTaxa {
-	NSString *string = [NSString stringWithString:API_TAXA_LIST];
-	NSURL *url = [[NSURL URLWithString:string] retain];
+	NSURL *url = [[NSURL URLWithString:API_TAXA_LIST] retain];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	[[NSURLConnection alloc]
 	 initWithRequest:request delegate:self];
-	
 }
 
 - (IBAction)pickTaxa:(id)sender {
@@ -130,14 +148,6 @@
 
 
 	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
-	
-	//UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Close"]];
-//	closeButton.momentary = YES; 
-//	closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
-//	closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
-//	closeButton.tintColor = [UIColor blackColor];
-//	[closeButton addTarget:self action:@selector(dismissActionSheet:) forControlEvents:UIControlEventValueChanged];
-	//[actionSheet addSubview:closeButton];
 	
 	/* Add the UIActionSheet to the view */
 	[actionSheet showInView:self.view];
@@ -178,11 +188,76 @@
 	imageView.image = newSighting.photo;
 }
 
+- (void)sendSighting {
+	
+}
+
+- (IBAction)uploadImage {
+
+	UIImage *image = [imageView image];
+	NSData *imageData = UIImageJPEGRepresentation(image, 90);
+	
+	// setting up the request object now
+	NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
+	[request setURL:[NSURL URLWithString:API_SIGHTING_POST]];
+	[request setHTTPMethod:@"POST"];
+	
+	/*
+	 add some header info now
+	 we always need a boundary when we post a file
+	 also we need to set the content type
+	 
+	 You might want to generate a random boundary.. this is just the same
+	 as my output from wireshark on a valid html post
+	 */
+	NSString *boundary = [NSString stringWithString:@"---------------------------14737809831466499882746641449"];
+	NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+	[request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+	
+	/*
+	 now lets create the body of the post
+	 */
+	NSMutableData *body = [NSMutableData data];
+	
+	//lat
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"lat\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"%f", newSighting.location.coordinate.latitude] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+
+	//lon
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"lon\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"%f", newSighting.location.coordinate.longitude] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	
+	//taxa
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"taxon\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"%@", newSighting.taxonPK] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	
+	//image
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"photo\"; filename=\"iPhonePhoto.jpg\"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[NSData dataWithData:imageData]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	// setting the body of the post to the reqeust
+	[request setHTTPBody:body];
+	
+	// now lets make the connection to the web
+	NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
+	
+	NSLog(returnString);
+}
+
+
 #pragma mark NSURLConnection Methods
 
 - (void)connection:(NSURLConnection *)connection
 		didReceiveData:(NSData *)data
 {
+	NSLog(@"Connection: %@", connection);
+	NSLog(@"URL: %@", [currentURL path]);
 	[responseData appendData:data];
 }
 
@@ -196,7 +271,7 @@
 - (void)connection:(NSURLConnection *)connection
 		didReceiveResponse:(NSURLResponse *)response
 {
-	
+	currentURL = [response URL];
 	[responseData setLength:0];
 }
 
@@ -240,7 +315,8 @@
 	titleForRow:(NSInteger)row
 	forComponent:(NSInteger)component
 {
-	return [taxa objectAtIndex:row];
+	NSLog(@"taxa: %@", taxa);
+	return [[taxa objectAtIndex:row] objectAtIndex:1];
 }
 
 
@@ -326,6 +402,7 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     newSighting.taxonName = [self pickerView:taxaPicker titleForRow:[taxaPicker selectedRowInComponent:0] forComponent:0];
+	newSighting.taxonPK = [[taxa objectAtIndex:[taxaPicker selectedRowInComponent:0]] objectAtIndex:0];
 	[self updateUIInfo];
 }
 

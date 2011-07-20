@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 extern NSString * const API_TAXA_LIST;
+extern NSString * const API_SIGHTING_POST;
 
 @class RootController;
 

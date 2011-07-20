@@ -12,6 +12,7 @@
 @implementation Sighting
 
 @synthesize taxonName;
+@synthesize taxonPK;
 @synthesize location;
 @synthesize email;
 @synthesize dateTime;
@@ -20,6 +21,7 @@
 
 -(void) dealloc {
 	[taxonName release];
+	[taxonPK release];
 	[location release];
 	[email release];
 	[contactable release];

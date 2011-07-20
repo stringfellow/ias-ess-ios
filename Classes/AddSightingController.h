@@ -35,6 +35,7 @@
 	UITableViewCell *taxaCell;
 	UITableViewCell *locationCell;
 	
+	NSURL *currentURL;
 		
 	NSMutableArray *taxa;
 	NSMutableData *responseData;
@@ -54,6 +55,7 @@
 @property (nonatomic, retain) IBOutlet UITableViewCell *taxaCell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *locationCell;
 
+@property (nonatomic, retain) IBOutlet NSURL *currentURL;
 
 @property (nonatomic, retain) IBOutlet Sighting *newSighting;
 
@@ -63,5 +65,6 @@
 - (IBAction)doneImage:(id)sender;
 - (IBAction)pickTaxa:(id)sender;
 - (IBAction)updateUIInfo;
+- (IBAction)uploadImage;
 
 @end

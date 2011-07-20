@@ -12,6 +12,7 @@
 
 @interface Sighting : NSObject {
 	NSString *taxonName;
+	NSNumber *taxonPK;
 	CLLocation *location;
 	NSString *email;
 	NSNumber *contactable;
@@ -20,6 +21,7 @@
 }
 
 @property (nonatomic, retain) NSString *taxonName;
+@property (nonatomic, retain) NSNumber *taxonPK;
 @property (nonatomic, retain) CLLocation *location;
 @property (nonatomic, retain) NSString *email;
 @property (nonatomic, retain) NSNumber *contactable;
