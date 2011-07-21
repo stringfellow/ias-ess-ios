@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "Sighting.h"
 #import "GetPhotoController.h"
+#import "QuestionnaireView.h"
 
 @interface AddSightingController : UIViewController 
 	<
@@ -19,7 +20,8 @@
 		UINavigationControllerDelegate,
 		GetPhotoDelegate,
 		UITableViewDataSource, UITableViewDelegate,
-		UIActionSheetDelegate
+		UIActionSheetDelegate,
+		QuestionnaireDelegate
 	> {
 	
 	UIPickerView *taxaPicker;
@@ -36,6 +38,7 @@
 	UITableViewCell *locationCell;
 	
 	NSURL *currentURL;
+	NSURL *sightingURL;
 		
 	NSMutableArray *taxa;
 	NSMutableData *responseData;
@@ -56,6 +59,7 @@
 @property (nonatomic, retain) IBOutlet UITableViewCell *locationCell;
 
 @property (nonatomic, retain) IBOutlet NSURL *currentURL;
+@property (nonatomic, retain) IBOutlet NSURL *sightingURL;
 
 @property (nonatomic, retain) IBOutlet Sighting *newSighting;
 

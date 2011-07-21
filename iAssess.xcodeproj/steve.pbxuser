@@ -31,9 +31,9 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* RootController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1118, 1586}}";
-			sepNavSelRange = "{285, 0}";
-			sepNavVisRange = "{0, 937}";
+			sepNavIntBoundsRect = "{{0, 0}, {1154, 1586}}";
+			sepNavSelRange = "{2747, 0}";
+			sepNavVisRange = "{309, 950}";
 			sepNavWindowFrame = "{{61, 70}, {1214, 761}}";
 		};
 	};
@@ -296,6 +296,51 @@
 			AAA2B81813D78C8000AED599 /* PBXTextBookmark */ = AAA2B81813D78C8000AED599 /* PBXTextBookmark */;
 			AAA2B81913D78C8000AED599 /* PBXTextBookmark */ = AAA2B81913D78C8000AED599 /* PBXTextBookmark */;
 			AAA2B81A13D78C8000AED599 /* PBXTextBookmark */ = AAA2B81A13D78C8000AED599 /* PBXTextBookmark */;
+			AAA2B82213D8B9A900AED599 /* PBXTextBookmark */ = AAA2B82213D8B9A900AED599 /* PBXTextBookmark */;
+			AAA2B82313D8B9A900AED599 /* PBXTextBookmark */ = AAA2B82313D8B9A900AED599 /* PBXTextBookmark */;
+			AAA2B82413D8B9A900AED599 /* PBXTextBookmark */ = AAA2B82413D8B9A900AED599 /* PBXTextBookmark */;
+			AAA2B82513D8B9A900AED599 /* PBXTextBookmark */ = AAA2B82513D8B9A900AED599 /* PBXTextBookmark */;
+			AAA2B82613D8B9A900AED599 /* PBXTextBookmark */ = AAA2B82613D8B9A900AED599 /* PBXTextBookmark */;
+			AAA2B82A13D8BBEE00AED599 /* PBXTextBookmark */ = AAA2B82A13D8BBEE00AED599 /* PBXTextBookmark */;
+			AAA2B82B13D8BBEE00AED599 /* PBXTextBookmark */ = AAA2B82B13D8BBEE00AED599 /* PBXTextBookmark */;
+			AAA2B82C13D8BBEE00AED599 /* PBXTextBookmark */ = AAA2B82C13D8BBEE00AED599 /* PBXTextBookmark */;
+			AAA2B82D13D8BBEE00AED599 /* PBXTextBookmark */ = AAA2B82D13D8BBEE00AED599 /* PBXTextBookmark */;
+			AAA2B82E13D8BBEE00AED599 /* PBXTextBookmark */ = AAA2B82E13D8BBEE00AED599 /* PBXTextBookmark */;
+			AAA2B83313D8C18300AED599 /* PBXTextBookmark */ = AAA2B83313D8C18300AED599 /* PBXTextBookmark */;
+			AAA2B83413D8C18300AED599 /* PBXTextBookmark */ = AAA2B83413D8C18300AED599 /* PBXTextBookmark */;
+			AAA2B83513D8C18300AED599 /* PBXTextBookmark */ = AAA2B83513D8C18300AED599 /* PBXTextBookmark */;
+			AAA2B83613D8C18300AED599 /* PBXTextBookmark */ = AAA2B83613D8C18300AED599 /* PBXTextBookmark */;
+			AAA2B83713D8C18300AED599 /* XCBuildMessageTextBookmark */ = AAA2B83713D8C18300AED599 /* XCBuildMessageTextBookmark */;
+			AAA2B83813D8C18300AED599 /* PBXTextBookmark */ = AAA2B83813D8C18300AED599 /* PBXTextBookmark */;
+			AAA2B83913D8C24B00AED599 /* PBXTextBookmark */ = AAA2B83913D8C24B00AED599 /* PBXTextBookmark */;
+			AAA2B83A13D8C24B00AED599 /* PBXTextBookmark */ = AAA2B83A13D8C24B00AED599 /* PBXTextBookmark */;
+			AAA2B83B13D8C24B00AED599 /* PBXTextBookmark */ = AAA2B83B13D8C24B00AED599 /* PBXTextBookmark */;
+			AAA2B83C13D8C24B00AED599 /* PBXTextBookmark */ = AAA2B83C13D8C24B00AED599 /* PBXTextBookmark */;
+			AAA2B83F13D8C2E300AED599 /* PBXTextBookmark */ = AAA2B83F13D8C2E300AED599 /* PBXTextBookmark */;
+			AAA2B84013D8C2E300AED599 /* PBXTextBookmark */ = AAA2B84013D8C2E300AED599 /* PBXTextBookmark */;
+			AAA2B84113D8C2E300AED599 /* PBXTextBookmark */ = AAA2B84113D8C2E300AED599 /* PBXTextBookmark */;
+			AAA2B84213D8C2E300AED599 /* XCBuildMessageTextBookmark */ = AAA2B84213D8C2E300AED599 /* XCBuildMessageTextBookmark */;
+			AAA2B84313D8C2E300AED599 /* PBXTextBookmark */ = AAA2B84313D8C2E300AED599 /* PBXTextBookmark */;
+			AAA2B84813D8C31200AED599 /* PBXTextBookmark */ = AAA2B84813D8C31200AED599 /* PBXTextBookmark */;
+			AAA2B84913D8C31200AED599 /* XCBuildMessageTextBookmark */ = AAA2B84913D8C31200AED599 /* XCBuildMessageTextBookmark */;
+			AAA2B84A13D8C31200AED599 /* PBXTextBookmark */ = AAA2B84A13D8C31200AED599 /* PBXTextBookmark */;
+			AAA2B84E13D8C33400AED599 /* PBXTextBookmark */ = AAA2B84E13D8C33400AED599 /* PBXTextBookmark */;
+			AAA2B84F13D8C33400AED599 /* PBXTextBookmark */ = AAA2B84F13D8C33400AED599 /* PBXTextBookmark */;
+			AAA2B85013D8C33400AED599 /* PBXTextBookmark */ = AAA2B85013D8C33400AED599 /* PBXTextBookmark */;
+			AAA2B85113D8C33400AED599 /* PBXTextBookmark */ = AAA2B85113D8C33400AED599 /* PBXTextBookmark */;
+			AAA2B85213D8C3CC00AED599 /* PBXTextBookmark */ = AAA2B85213D8C3CC00AED599 /* PBXTextBookmark */;
+			AAA2B85313D8C3CC00AED599 /* PBXTextBookmark */ = AAA2B85313D8C3CC00AED599 /* PBXTextBookmark */;
+			AAA2B85413D8C3CC00AED599 /* PBXTextBookmark */ = AAA2B85413D8C3CC00AED599 /* PBXTextBookmark */;
+			AAA2B85513D8C49F00AED599 /* PBXTextBookmark */ = AAA2B85513D8C49F00AED599 /* PBXTextBookmark */;
+			AAA2B85813D8C52300AED599 /* PBXTextBookmark */ = AAA2B85813D8C52300AED599 /* PBXTextBookmark */;
+			AAA2B85B13D8C54C00AED599 /* XCBuildMessageTextBookmark */ = AAA2B85B13D8C54C00AED599 /* XCBuildMessageTextBookmark */;
+			AAA2B85C13D8C54C00AED599 /* PBXTextBookmark */ = AAA2B85C13D8C54C00AED599 /* PBXTextBookmark */;
+			AAA2B85D13D8C5A900AED599 /* PBXTextBookmark */ = AAA2B85D13D8C5A900AED599 /* PBXTextBookmark */;
+			AAA2B85E13D8C5A900AED599 /* PBXTextBookmark */ = AAA2B85E13D8C5A900AED599 /* PBXTextBookmark */;
+			AAA2B86313D8C60600AED599 /* PBXTextBookmark */ = AAA2B86313D8C60600AED599 /* PBXTextBookmark */;
+			AAA2B86613D8C61700AED599 /* PBXTextBookmark */ = AAA2B86613D8C61700AED599 /* PBXTextBookmark */;
+			AAA2B86713D8C63100AED599 /* PBXTextBookmark */ = AAA2B86713D8C63100AED599 /* PBXTextBookmark */;
+			AAA2B86813D8C64100AED599 /* PBXTextBookmark */ = AAA2B86813D8C64100AED599 /* PBXTextBookmark */;
 			AABE88E113D6FC93002C771D = AABE88E113D6FC93002C771D /* PBXTextBookmark */;
 			AABE88E213D6FC93002C771D = AABE88E213D6FC93002C771D /* PBXTextBookmark */;
 			AABE88E513D6FC98002C771D = AABE88E513D6FC98002C771D /* PBXTextBookmark */;
@@ -360,16 +405,16 @@
 	AA04028313D6058E00BBB312 /* GetPhotoController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1154, 585}}";
-			sepNavSelRange = "{824, 0}";
-			sepNavVisRange = "{150, 723}";
+			sepNavSelRange = "{197, 27}";
+			sepNavVisRange = "{147, 892}";
 			sepNavWindowFrame = "{{61, 70}, {1214, 761}}";
 		};
 	};
 	AA04028413D6058E00BBB312 /* GetPhotoController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1154, 1326}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 1326}}";
 			sepNavSelRange = "{968, 0}";
-			sepNavVisRange = "{763, 444}";
+			sepNavVisRange = "{531, 997}";
 			sepNavWindowFrame = "{{84, 49}, {1214, 761}}";
 		};
 	};
@@ -448,7 +493,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 22";
 		rLen = 0;
-		rLoc = 558;
+		rLoc = 613;
 		rType = 0;
 		vrLen = 1219;
 		vrLoc = 235;
@@ -458,7 +503,7 @@
 		comments = "'currentPosition' undeclared (first use in this function)";
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		rLen = 1;
-		rLoc = 149;
+		rLoc = 158;
 		rType = 1;
 	};
 	AA0403FD13D638A700BBB312 /* PBXTextBookmark */ = {
@@ -466,7 +511,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 149";
 		rLen = 0;
-		rLoc = 4405;
+		rLoc = 4673;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 2640;
@@ -480,9 +525,9 @@
 	};
 	AA095D2313D36CF7000A7CAD /* Sighting.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1154, 442}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1154, 660}}";
 			sepNavSelRange = "{391, 20}";
-			sepNavVisRange = "{0, 534}";
+			sepNavVisRange = "{0, 540}";
 		};
 	};
 	AA095D6113D3759E000A7CAD /* PBXTextBookmark */ = {
@@ -539,17 +584,18 @@
 	};
 	AA5977BD13D341C600A994CB /* AddSightingController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1154, 949}}";
-			sepNavSelRange = "{694, 11}";
-			sepNavVisRange = "{267, 693}";
+			sepNavIntBoundsRect = "{{0, 0}, {1154, 975}}";
+			sepNavSelRange = "{1744, 0}";
+			sepNavVisRange = "{910, 1076}";
 			sepNavWindowFrame = "{{107, 28}, {1214, 761}}";
 		};
 	};
 	AA5977BE13D341C600A994CB /* AddSightingController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1155, 5941}}";
-			sepNavSelRange = "{11705, 0}";
-			sepNavVisRange = "{10694, 1042}";
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 5161}}";
+			sepNavSelRange = "{8366, 0}";
+			sepNavVisRange = "{7038, 1747}";
+			sepNavWindowFrame = "{{15, 112}, {1214, 761}}";
 		};
 	};
 	AAA2B6A913D756DB00AED599 /* PBXTextBookmark */ = {
@@ -557,7 +603,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 328";
 		rLen = 0;
-		rLoc = 11603;
+		rLoc = 11935;
 		rType = 0;
 		vrLen = 850;
 		vrLoc = 7543;
@@ -567,7 +613,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 321";
 		rLen = 0;
-		rLoc = 11705;
+		rLoc = 12037;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 7089;
@@ -637,7 +683,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 321";
 		rLen = 0;
-		rLoc = 11705;
+		rLoc = 12037;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 7078;
@@ -647,7 +693,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 235";
 		rLen = 0;
-		rLoc = 9622;
+		rLoc = 9954;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 5331;
@@ -657,7 +703,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 235";
 		rLen = 0;
-		rLoc = 9622;
+		rLoc = 9954;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 5331;
@@ -677,7 +723,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 235";
 		rLen = 0;
-		rLoc = 9622;
+		rLoc = 9954;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 870;
@@ -717,7 +763,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 65";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 593;
@@ -727,7 +773,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 235";
 		rLen = 0;
-		rLoc = 9622;
+		rLoc = 9954;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 622;
@@ -737,7 +783,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 80";
 		rLen = 0;
-		rLoc = 2166;
+		rLoc = 2221;
 		rType = 0;
 		vrLen = 1170;
 		vrLoc = 1395;
@@ -747,7 +793,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 77";
 		rLen = 0;
-		rLoc = 2057;
+		rLoc = 2112;
 		rType = 0;
 		vrLen = 1206;
 		vrLoc = 1395;
@@ -757,7 +803,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 77";
 		rLen = 0;
-		rLoc = 2057;
+		rLoc = 2112;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 1395;
@@ -767,7 +813,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 77";
 		rLen = 0;
-		rLoc = 2057;
+		rLoc = 2112;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 1395;
@@ -777,7 +823,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 78";
 		rLen = 0;
-		rLoc = 2095;
+		rLoc = 2150;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 1481;
@@ -787,7 +833,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 2469;
@@ -797,7 +843,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 2469;
@@ -807,7 +853,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 2469;
@@ -817,7 +863,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 2469;
@@ -827,7 +873,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 900;
 		vrLoc = 2470;
@@ -837,7 +883,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 2668;
@@ -847,7 +893,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 976;
 		vrLoc = 2668;
@@ -857,7 +903,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 2668;
@@ -867,7 +913,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 2668;
@@ -877,7 +923,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 120";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 967;
 		vrLoc = 2810;
@@ -887,7 +933,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 120";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 2695;
@@ -897,7 +943,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 120";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 2668;
@@ -907,7 +953,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 120";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 734;
 		vrLoc = 2466;
@@ -917,7 +963,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 2561;
@@ -927,7 +973,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 2948;
+		rLoc = 3003;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 2561;
@@ -937,7 +983,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 129";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 805;
 		vrLoc = 2561;
@@ -947,7 +993,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 129";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 2300;
@@ -957,7 +1003,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 129";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 2464;
@@ -967,7 +1013,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 130";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 824;
 		vrLoc = 2349;
@@ -977,7 +1023,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 127";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 2464;
@@ -987,7 +1033,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 125";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 770;
 		vrLoc = 2464;
@@ -997,7 +1043,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 127";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 2396;
@@ -1007,7 +1053,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 125";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 876;
 		vrLoc = 2396;
@@ -1017,7 +1063,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 125";
 		rLen = 0;
-		rLoc = 3260;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 2396;
@@ -1027,7 +1073,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 3048;
+		rLoc = 3316;
 		rType = 0;
 		vrLen = 783;
 		vrLoc = 2723;
@@ -1057,7 +1103,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 119";
 		rLen = 0;
-		rLoc = 3048;
+		rLoc = 3316;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 2671;
@@ -1067,7 +1113,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 196";
 		rLen = 0;
-		rLoc = 8315;
+		rLoc = 8647;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 4571;
@@ -1077,7 +1123,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 196";
 		rLen = 0;
-		rLoc = 8315;
+		rLoc = 8647;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 4571;
@@ -1087,7 +1133,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 196";
 		rLen = 0;
-		rLoc = 8315;
+		rLoc = 8647;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 4571;
@@ -1097,7 +1143,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 210";
 		rLen = 0;
-		rLoc = 8655;
+		rLoc = 8987;
 		rType = 0;
 		vrLen = 832;
 		vrLoc = 4313;
@@ -1107,7 +1153,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 210";
 		rLen = 0;
-		rLoc = 8655;
+		rLoc = 8987;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 4218;
@@ -1117,7 +1163,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 65";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 593;
@@ -1127,7 +1173,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 58";
 		rLen = 0;
-		rLoc = 1610;
+		rLoc = 1745;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 564;
@@ -1137,7 +1183,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 58";
 		rLen = 0;
-		rLoc = 1609;
+		rLoc = 1685;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 564;
@@ -1147,7 +1193,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 210";
 		rLen = 0;
-		rLoc = 8655;
+		rLoc = 8987;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 4218;
@@ -1157,7 +1203,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 198";
 		rLen = 0;
-		rLoc = 8274;
+		rLoc = 8606;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 4689;
@@ -1167,7 +1213,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 198";
 		rLen = 0;
-		rLoc = 8274;
+		rLoc = 8606;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 4689;
@@ -1177,7 +1223,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 198";
 		rLen = 0;
-		rLoc = 8274;
+		rLoc = 8606;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 4689;
@@ -1187,7 +1233,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 198";
 		rLen = 0;
-		rLoc = 8274;
+		rLoc = 8606;
 		rType = 0;
 		vrLen = 978;
 		vrLoc = 4689;
@@ -1197,7 +1243,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 199";
 		rLen = 0;
-		rLoc = 8315;
+		rLoc = 8647;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 4672;
@@ -1207,7 +1253,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 199";
 		rLen = 0;
-		rLoc = 8315;
+		rLoc = 8647;
 		rType = 0;
 		vrLen = 1041;
 		vrLoc = 4536;
@@ -1267,7 +1313,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 137";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3759;
 		rType = 0;
 		vrLen = 1215;
 		vrLoc = 3008;
@@ -1386,7 +1432,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 202";
 		rLen = 0;
-		rLoc = 8315;
+		rLoc = 8647;
 		rType = 0;
 		vrLen = 807;
 		vrLoc = 4562;
@@ -1416,7 +1462,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 137";
 		rLen = 0;
-		rLoc = 3491;
+		rLoc = 3759;
 		rType = 0;
 		vrLen = 1193;
 		vrLoc = 3030;
@@ -1426,7 +1472,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 196";
 		rLen = 0;
-		rLoc = 5061;
+		rLoc = 5329;
 		rType = 0;
 		vrLen = 1188;
 		vrLoc = 4631;
@@ -1436,7 +1482,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 229";
 		rLen = 15;
-		rLoc = 7908;
+		rLoc = 8176;
 		rType = 0;
 		vrLen = 2153;
 		vrLoc = 5006;
@@ -1446,7 +1492,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 229";
 		rLen = 15;
-		rLoc = 7908;
+		rLoc = 8176;
 		rType = 0;
 		vrLen = 592;
 		vrLoc = 4969;
@@ -1456,7 +1502,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 121";
 		rLen = 0;
-		rLoc = 3047;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 2748;
@@ -1466,7 +1512,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 58";
 		rLen = 0;
-		rLoc = 1609;
+		rLoc = 1685;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 933;
@@ -1476,7 +1522,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 68";
 		rLen = 0;
-		rLoc = 1843;
+		rLoc = 1978;
 		rType = 0;
 		vrLen = 813;
 		vrLoc = 1038;
@@ -1486,7 +1532,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 229";
 		rLen = 15;
-		rLoc = 7908;
+		rLoc = 8176;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 4993;
@@ -1496,7 +1542,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 68";
 		rLen = 0;
-		rLoc = 1843;
+		rLoc = 1978;
 		rType = 0;
 		vrLen = 890;
 		vrLoc = 961;
@@ -1536,7 +1582,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 229";
 		rLen = 15;
-		rLoc = 7908;
+		rLoc = 8176;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 4993;
@@ -1556,7 +1602,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 229";
 		rLen = 15;
-		rLoc = 7908;
+		rLoc = 8176;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 4993;
@@ -1596,7 +1642,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 229";
 		rLen = 15;
-		rLoc = 7908;
+		rLoc = 8176;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 4993;
@@ -1696,7 +1742,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 229";
 		rLen = 15;
-		rLoc = 7908;
+		rLoc = 8176;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 4997;
@@ -1706,7 +1752,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 221";
 		rLen = 0;
-		rLoc = 7400;
+		rLoc = 7668;
 		rType = 0;
 		vrLen = 1109;
 		vrLoc = 5935;
@@ -1726,7 +1772,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 212";
 		rLen = 0;
-		rLoc = 5692;
+		rLoc = 5960;
 		rType = 0;
 		vrLen = 1574;
 		vrLoc = 5431;
@@ -1746,7 +1792,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 212";
 		rLen = 0;
-		rLoc = 5689;
+		rLoc = 5957;
 		rType = 0;
 		vrLen = 1574;
 		vrLoc = 5431;
@@ -1766,7 +1812,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 221";
 		rLen = 5;
-		rLoc = 7369;
+		rLoc = 7637;
 		rType = 0;
 		vrLen = 1540;
 		vrLoc = 5431;
@@ -1816,7 +1862,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 221";
 		rLen = 5;
-		rLoc = 7369;
+		rLoc = 7637;
 		rType = 0;
 		vrLen = 1540;
 		vrLoc = 5431;
@@ -1826,7 +1872,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 197";
 		rLen = 0;
-		rLoc = 5061;
+		rLoc = 5329;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 4993;
@@ -1846,7 +1892,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 197";
 		rLen = 0;
-		rLoc = 5061;
+		rLoc = 5329;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 4993;
@@ -1866,7 +1912,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 197";
 		rLen = 0;
-		rLoc = 5061;
+		rLoc = 5329;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 4993;
@@ -1916,7 +1962,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 121";
 		rLen = 0;
-		rLoc = 3047;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 638;
 		vrLoc = 2624;
@@ -2096,7 +2142,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 121";
 		rLen = 0;
-		rLoc = 3047;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 638;
 		vrLoc = 2624;
@@ -2106,7 +2152,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 121";
 		rLen = 0;
-		rLoc = 3047;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 3260;
@@ -2142,7 +2188,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 30";
 		rLen = 11;
-		rLoc = 694;
+		rLoc = 749;
 		rType = 0;
 		vrLen = 693;
 		vrLoc = 267;
@@ -2152,7 +2198,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 197";
 		rLen = 0;
-		rLoc = 5061;
+		rLoc = 5329;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 4929;
@@ -2162,7 +2208,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 198";
 		rLen = 0;
-		rLoc = 5114;
+		rLoc = 5382;
 		rType = 0;
 		vrLen = 1540;
 		vrLoc = 5456;
@@ -2182,7 +2228,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 198";
 		rLen = 0;
-		rLoc = 5114;
+		rLoc = 5382;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 5459;
@@ -2222,7 +2268,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 222";
 		rLen = 0;
-		rLoc = 7400;
+		rLoc = 7668;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 5459;
@@ -2242,7 +2288,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 222";
 		rLen = 0;
-		rLoc = 7400;
+		rLoc = 7668;
 		rType = 0;
 		vrLen = 1658;
 		vrLoc = 5123;
@@ -2262,7 +2308,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 219";
 		rLen = 0;
-		rLoc = 5866;
+		rLoc = 6134;
 		rType = 0;
 		vrLen = 1901;
 		vrLoc = 5338;
@@ -2282,7 +2328,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 225";
 		rLen = 0;
-		rLoc = 6373;
+		rLoc = 6641;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 5342;
@@ -2302,7 +2348,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6159;
+		rLoc = 6427;
 		rType = 0;
 		vrLen = 1859;
 		vrLoc = 5417;
@@ -2322,7 +2368,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6159;
+		rLoc = 6427;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 5417;
@@ -2342,7 +2388,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6159;
+		rLoc = 6427;
 		rType = 0;
 		vrLen = 1884;
 		vrLoc = 5417;
@@ -2392,7 +2438,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6159;
+		rLoc = 6427;
 		rType = 0;
 		vrLen = 1844;
 		vrLoc = 5456;
@@ -2402,7 +2448,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 1850;
 		vrLoc = 5459;
@@ -2422,7 +2468,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 1852;
 		vrLoc = 5459;
@@ -2466,7 +2512,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 1854;
 		vrLoc = 5456;
@@ -2476,7 +2522,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 1812;
 		vrLoc = 5459;
@@ -2496,7 +2542,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 2272;
 		vrLoc = 5161;
@@ -2506,7 +2552,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 1692;
 		vrLoc = 5581;
@@ -2526,7 +2572,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6164;
+		rLoc = 6432;
 		rType = 0;
 		vrLen = 2272;
 		vrLoc = 5161;
@@ -2536,7 +2582,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 5697;
@@ -2556,7 +2602,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 223";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 2310;
 		vrLoc = 5161;
@@ -2566,7 +2612,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 224";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 2020;
 		vrLoc = 5865;
@@ -2586,7 +2632,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 237";
 		rLen = 0;
-		rLoc = 7167;
+		rLoc = 7435;
 		rType = 0;
 		vrLen = 2928;
 		vrLoc = 5161;
@@ -2596,7 +2642,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 224";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 2218;
 		vrLoc = 5871;
@@ -2616,7 +2662,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 234";
 		rLen = 0;
-		rLoc = 6977;
+		rLoc = 7245;
 		rType = 0;
 		vrLen = 2928;
 		vrLoc = 5161;
@@ -2626,7 +2672,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 224";
 		rLen = 0;
-		rLoc = 6207;
+		rLoc = 6475;
 		rType = 0;
 		vrLen = 2181;
 		vrLoc = 5910;
@@ -2646,17 +2692,475 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 405";
 		rLen = 0;
-		rLoc = 11705;
+		rLoc = 12037;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 10694;
+	};
+	AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1154, 462}}";
+			sepNavSelRange = "{574, 102}";
+			sepNavVisRange = "{0, 682}";
+			sepNavWindowFrame = "{{38, 91}, {1214, 761}}";
+		};
+	};
+	AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1154, 793}}";
+			sepNavSelRange = "{269, 0}";
+			sepNavVisRange = "{0, 965}";
+		};
+	};
+	AAA2B82213D8B9A900AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* RootController.m */;
+		name = "RootController.m: 115";
+		rLen = 0;
+		rLoc = 2747;
+		rType = 0;
+		vrLen = 1259;
+		vrLoc = 0;
+	};
+	AAA2B82313D8B9A900AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 122";
+		rLen = 0;
+		rLoc = 3319;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 2495;
+	};
+	AAA2B82413D8B9A900AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA095D2313D36CF7000A7CAD /* Sighting.m */;
+		name = "Sighting.m: 23";
+		rLen = 20;
+		rLoc = 391;
+		rType = 0;
+		vrLen = 540;
+		vrLoc = 0;
+	};
+	AAA2B82513D8B9A900AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */;
+		rLen = 0;
+		rLoc = 9223372036854776244;
+		rType = 0;
+	};
+	AAA2B82613D8B9A900AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */;
+		name = "QuestionnaireView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 0;
+	};
+	AAA2B82A13D8BBEE00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */;
+		name = "QuestionnaireView.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1071;
+		vrLoc = 0;
+	};
+	AAA2B82B13D8BBEE00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 37";
+		rLen = 0;
+		rLoc = 968;
+		rType = 0;
+		vrLen = 1188;
+		vrLoc = 365;
+	};
+	AAA2B82C13D8BBEE00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 30";
+		rLen = 62;
+		rLoc = 641;
+		rType = 0;
+		vrLen = 894;
+		vrLoc = 18;
+	};
+	AAA2B82D13D8BBEE00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */;
+		name = "QuestionnaireView.h: 19";
+		rLen = 0;
+		rLoc = 522;
+		rType = 0;
+		vrLen = 332;
+		vrLoc = 0;
+	};
+	AAA2B82E13D8BBEE00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */;
+		name = "QuestionnaireView.h: 20";
+		rLen = 0;
+		rLoc = 493;
+		rType = 0;
+		vrLen = 392;
+		vrLoc = 0;
+	};
+	AAA2B83313D8C18300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
+		name = "AddSightingController.h: 30";
+		rLen = 11;
+		rLoc = 749;
+		rType = 0;
+		vrLen = 1022;
+		vrLoc = 267;
+	};
+	AAA2B83413D8C18300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028313D6058E00BBB312 /* GetPhotoController.h */;
+		name = "GetPhotoController.h: 12";
+		rLen = 27;
+		rLoc = 197;
+		rType = 0;
+		vrLen = 892;
+		vrLoc = 147;
+	};
+	AAA2B83513D8C18300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 10";
+		rLen = 0;
+		rLoc = 198;
+		rType = 0;
+		vrLen = 875;
+		vrLoc = 1672;
+	};
+	AAA2B83613D8C18300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */;
+		name = "QuestionnaireView.h: 30";
+		rLen = 0;
+		rLoc = 675;
+		rType = 0;
+		vrLen = 682;
+		vrLoc = 0;
+	};
+	AAA2B83713D8C18300AED599 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'qv' undeclared (first use in this function)";
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 124;
+		rType = 1;
+	};
+	AAA2B83813D8C18300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 124";
+		rLen = 0;
+		rLoc = 3107;
+		rType = 0;
+		vrLen = 850;
+		vrLoc = 2654;
+	};
+	AAA2B83913D8C24B00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */;
+		name = "QuestionnaireView.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1066;
+		vrLoc = 0;
+	};
+	AAA2B83A13D8C24B00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */;
+		name = "QuestionnaireView.h: 29";
+		rLen = 102;
+		rLoc = 574;
+		rType = 0;
+		vrLen = 682;
+		vrLoc = 0;
+	};
+	AAA2B83B13D8C24B00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 419";
+		rLen = 0;
+		rLoc = 12107;
+		rType = 0;
+		vrLen = 755;
+		vrLoc = 11251;
+	};
+	AAA2B83C13D8C24B00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 431";
+		rLen = 0;
+		rLoc = 12360;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 11462;
+	};
+	AAA2B83F13D8C2E300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 431";
+		rLen = 0;
+		rLoc = 12360;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 11462;
+	};
+	AAA2B84013D8C2E300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */;
+		name = "QuestionnaireView.h: 29";
+		rLen = 102;
+		rLoc = 574;
+		rType = 0;
+		vrLen = 682;
+		vrLoc = 0;
+	};
+	AAA2B84113D8C2E300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA04028413D6058E00BBB312 /* GetPhotoController.m */;
+		name = "GetPhotoController.m: 85";
+		rLen = 82;
+		rLoc = 2115;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 1736;
+	};
+	AAA2B84213D8C2E300AED599 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Property 'webView' requires method '-webView' to be defined - use @synthesize, @dynamic or provide a method implementation";
+		fRef = AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 63;
+		rType = 1;
+	};
+	AAA2B84313D8C2E300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */;
+		name = "QuestionnaireView.m: 15";
+		rLen = 0;
+		rLoc = 269;
+		rType = 0;
+		vrLen = 965;
+		vrLoc = 0;
+	};
+	AAA2B84813D8C31200AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */;
+		name = "QuestionnaireView.m: 15";
+		rLen = 0;
+		rLoc = 269;
+		rType = 0;
+		vrLen = 965;
+		vrLoc = 0;
+	};
+	AAA2B84913D8C31200AED599 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Stray '\\342' in program";
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 423;
+		rType = 1;
+	};
+	AAA2B84A13D8C31200AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 426";
+		rLen = 0;
+		rLoc = 12217;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 11464;
+	};
+	AAA2B84E13D8C33400AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 426";
+		rLen = 0;
+		rLoc = 12217;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 11462;
+	};
+	AAA2B84F13D8C33400AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* RootController.m */;
+		name = "RootController.m: 115";
+		rLen = 0;
+		rLoc = 2747;
+		rType = 0;
+		vrLen = 950;
+		vrLoc = 309;
+	};
+	AAA2B85013D8C33400AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
+		name = "AddSightingController.h: 30";
+		rLen = 11;
+		rLoc = 749;
+		rType = 0;
+		vrLen = 900;
+		vrLoc = 267;
+	};
+	AAA2B85113D8C33400AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
+		name = "AddSightingController.h: 14";
+		rLen = 0;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 907;
+		vrLoc = 3;
+	};
+	AAA2B85213D8C3CC00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
+		name = "AddSightingController.h: 62";
+		rLen = 0;
+		rLoc = 1744;
+		rType = 0;
+		vrLen = 1076;
+		vrLoc = 910;
+	};
+	AAA2B85313D8C3CC00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 426";
+		rLen = 0;
+		rLoc = 12217;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 11462;
+	};
+	AAA2B85413D8C3CC00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 71";
+		rLen = 0;
+		rLoc = 1841;
+		rType = 0;
+		vrLen = 1126;
+		vrLoc = 1071;
+	};
+	AAA2B85513D8C49F00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 421";
+		rLen = 0;
+		rLoc = 12194;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 11385;
+	};
+	AAA2B85813D8C52300AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 421";
+		rLen = 0;
+		rLoc = 12194;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 11385;
+	};
+	AAA2B85B13D8C54C00AED599 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Property 'sightingURL' requires method '-sightingURL' to be defined - use @synthesize, @dynamic or provide a method implementation";
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 433;
+		rType = 1;
+	};
+	AAA2B85C13D8C54C00AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 36";
+		rLen = 0;
+		rLoc = 686;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 338;
+	};
+	AAA2B85D13D8C5A900AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 36";
+		rLen = 0;
+		rLoc = 686;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 338;
+	};
+	AAA2B85E13D8C5A900AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 259";
+		rLen = 0;
+		rLoc = 8380;
+		rType = 0;
+		vrLen = 2013;
+		vrLoc = 6641;
+	};
+	AAA2B86313D8C60600AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 259";
+		rLen = 0;
+		rLoc = 8366;
+		rType = 0;
+		vrLen = 1711;
+		vrLoc = 7038;
+	};
+	AAA2B86613D8C61700AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 259";
+		rLen = 0;
+		rLoc = 8366;
+		rType = 0;
+		vrLen = 1705;
+		vrLoc = 7038;
+	};
+	AAA2B86713D8C63100AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 259";
+		rLen = 0;
+		rLoc = 8366;
+		rType = 0;
+		vrLen = 1705;
+		vrLoc = 7038;
+	};
+	AAA2B86813D8C64100AED599 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
+		name = "AddSightingController.m: 259";
+		rLen = 0;
+		rLoc = 8366;
+		rType = 0;
+		vrLen = 1747;
+		vrLoc = 7038;
 	};
 	AABE88E113D6FC93002C771D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 149";
 		rLen = 0;
-		rLoc = 4405;
+		rLoc = 4673;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 2565;
@@ -2666,7 +3170,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 149";
 		rLen = 0;
-		rLoc = 4405;
+		rLoc = 4673;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 2565;
@@ -2676,7 +3180,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 149";
 		rLen = 0;
-		rLoc = 4405;
+		rLoc = 4673;
 		rType = 0;
 		vrLen = 1443;
 		vrLoc = 2499;
@@ -2686,7 +3190,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 130";
 		rLen = 0;
-		rLoc = 3926;
+		rLoc = 4194;
 		rType = 0;
 		vrLen = 1496;
 		vrLoc = 2723;
@@ -2696,7 +3200,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 142";
 		rLen = 0;
-		rLoc = 4138;
+		rLoc = 4406;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 2723;
@@ -2706,7 +3210,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 135";
 		rLen = 0;
-		rLoc = 3926;
+		rLoc = 4194;
 		rType = 0;
 		vrLen = 1508;
 		vrLoc = 2723;
@@ -2716,7 +3220,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 142";
 		rLen = 0;
-		rLoc = 4135;
+		rLoc = 4403;
 		rType = 0;
 		vrLen = 1506;
 		vrLoc = 2723;
@@ -2726,7 +3230,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 142";
 		rLen = 0;
-		rLoc = 4146;
+		rLoc = 4414;
 		rType = 0;
 		vrLen = 1510;
 		vrLoc = 2890;
@@ -2736,7 +3240,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 143";
 		rLen = 0;
-		rLoc = 4296;
+		rLoc = 4564;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 2890;
@@ -2746,7 +3250,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 65";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1841;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 761;
@@ -2756,7 +3260,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 66";
 		rLen = 0;
-		rLoc = 1784;
+		rLoc = 1839;
 		rType = 0;
 		vrLen = 1146;
 		vrLoc = 1232;
@@ -2766,7 +3270,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4149;
+		rLoc = 4417;
 		rType = 0;
 		vrLen = 1268;
 		vrLoc = 3416;
@@ -2776,7 +3280,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4149;
+		rLoc = 4417;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 3418;
@@ -2786,7 +3290,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4147;
+		rLoc = 4415;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 3479;
@@ -2796,7 +3300,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4146;
+		rLoc = 4414;
 		rType = 0;
 		vrLen = 1169;
 		vrLoc = 3628;
@@ -2806,7 +3310,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4147;
+		rLoc = 4415;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 3688;
@@ -2816,7 +3320,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4149;
+		rLoc = 4417;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 3804;
@@ -2826,7 +3330,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4149;
+		rLoc = 4417;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 3960;
@@ -2836,7 +3340,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 145";
 		rLen = 0;
-		rLoc = 4149;
+		rLoc = 4417;
 		rType = 0;
 		vrLen = 973;
 		vrLoc = 4003;
@@ -2846,7 +3350,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 169";
 		rLen = 0;
-		rLoc = 4735;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 4614;
@@ -2856,7 +3360,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 169";
 		rLen = 0;
-		rLoc = 4735;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 4614;
@@ -2866,7 +3370,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 169";
 		rLen = 0;
-		rLoc = 4735;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 757;
 		vrLoc = 4666;
@@ -2876,7 +3380,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 169";
 		rLen = 0;
-		rLoc = 4735;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 4614;
@@ -2886,7 +3390,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 22";
 		rLen = 0;
-		rLoc = 558;
+		rLoc = 613;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 235;
@@ -2896,7 +3400,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 63";
 		rLen = 0;
-		rLoc = 1814;
+		rLoc = 1949;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 593;
@@ -2906,7 +3410,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 169";
 		rLen = 0;
-		rLoc = 4735;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 4614;
@@ -2926,7 +3430,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 63";
 		rLen = 0;
-		rLoc = 1814;
+		rLoc = 1949;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 593;
@@ -2936,7 +3440,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 63";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1029;
 		vrLoc = 651;
@@ -2946,7 +3450,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 63";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 630;
@@ -2956,7 +3460,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 169";
 		rLen = 0;
-		rLoc = 4735;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 4614;
@@ -2966,7 +3470,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 168";
 		rLen = 0;
-		rLoc = 4671;
+		rLoc = 4939;
 		rType = 0;
 		vrLen = 964;
 		vrLoc = 4419;
@@ -2976,7 +3480,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 327";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 7580;
@@ -2986,7 +3490,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 327";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 7580;
@@ -2996,7 +3500,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 327";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 7580;
@@ -3006,7 +3510,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 328";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 7638;
@@ -3016,7 +3520,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 328";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 7640;
@@ -3026,7 +3530,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 329";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 7679;
@@ -3036,7 +3540,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 329";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 7668;
@@ -3046,7 +3550,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 328";
 		rLen = 0;
-		rLoc = 11725;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 7775;
@@ -3056,7 +3560,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 253";
 		rLen = 0;
-		rLoc = 9952;
+		rLoc = 10284;
 		rType = 0;
 		vrLen = 650;
 		vrLoc = 5868;
@@ -3066,7 +3570,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 253";
 		rLen = 0;
-		rLoc = 9952;
+		rLoc = 10284;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 5794;
@@ -3076,7 +3580,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 63";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1029;
 		vrLoc = 651;
@@ -3086,7 +3590,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 63";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 235;
@@ -3096,7 +3600,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 50";
 		rLen = 0;
-		rLoc = 1276;
+		rLoc = 1352;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 593;
@@ -3106,7 +3610,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 50";
 		rLen = 0;
-		rLoc = 1276;
+		rLoc = 1352;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 593;
@@ -3116,7 +3620,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 253";
 		rLen = 0;
-		rLoc = 9952;
+		rLoc = 10284;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 5794;
@@ -3126,7 +3630,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 172";
 		rLen = 0;
-		rLoc = 4889;
+		rLoc = 5157;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 4237;
@@ -3136,7 +3640,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 25";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 549;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 317;
@@ -3146,7 +3650,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 50";
 		rLen = 0;
-		rLoc = 1276;
+		rLoc = 1352;
 		rType = 0;
 		vrLen = 1086;
 		vrLoc = 630;
@@ -3156,7 +3660,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 65";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 718;
@@ -3166,7 +3670,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 65";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 718;
@@ -3176,7 +3680,7 @@
 		fRef = AA5977BD13D341C600A994CB /* AddSightingController.h */;
 		name = "AddSightingController.h: 65";
 		rLen = 0;
-		rLoc = 1818;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 718;
@@ -3186,7 +3690,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 25";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 549;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 317;
@@ -3196,7 +3700,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 328";
 		rLen = 0;
-		rLoc = 11705;
+		rLoc = 12037;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 7660;
@@ -3206,7 +3710,7 @@
 		fRef = AA5977BE13D341C600A994CB /* AddSightingController.m */;
 		name = "AddSightingController.m: 328";
 		rLen = 0;
-		rLoc = 11603;
+		rLoc = 11935;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 7660;

@@ -27,6 +27,8 @@
 		AA59787813D3596A00A994CB /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA59787113D3596A00A994CB /* SBJsonBase.m */; };
 		AA59787913D3596A00A994CB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA59787313D3596A00A994CB /* SBJsonParser.m */; };
 		AA59787A13D3596A00A994CB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA59787513D3596A00A994CB /* SBJsonWriter.m */; };
+		AAA2B81F13D8B9A300AED599 /* QuestionnaireView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */; };
+		AAA2B82013D8B9A300AED599 /* QuestionnaireView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA2B81E13D8B9A300AED599 /* QuestionnaireView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,9 @@
 		AA59787313D3596A00A994CB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		AA59787413D3596A00A994CB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		AA59787513D3596A00A994CB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionnaireView.h; sourceTree = "<group>"; };
+		AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionnaireView.m; sourceTree = "<group>"; };
+		AAA2B81E13D8B9A300AED599 /* QuestionnaireView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QuestionnaireView.xib; path = Classes/QuestionnaireView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,8 @@
 				AA095D2313D36CF7000A7CAD /* Sighting.m */,
 				AA04028313D6058E00BBB312 /* GetPhotoController.h */,
 				AA04028413D6058E00BBB312 /* GetPhotoController.m */,
+				AAA2B81C13D8B9A300AED599 /* QuestionnaireView.h */,
+				AAA2B81D13D8B9A300AED599 /* QuestionnaireView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -133,6 +140,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AAA2B81E13D8B9A300AED599 /* QuestionnaireView.xib */,
 				AA095DB613D38292000A7CAD /* GetPhotoController.xib */,
 				AA5977BF13D341C600A994CB /* AddSightingController.xib */,
 				2899E5210DE3E06400AC0155 /* RootController.xib */,
@@ -224,6 +232,7 @@
 				2899E5220DE3E06400AC0155 /* RootController.xib in Resources */,
 				AA5977C113D341C600A994CB /* AddSightingController.xib in Resources */,
 				AA095DB813D38292000A7CAD /* GetPhotoController.xib in Resources */,
+				AAA2B82013D8B9A300AED599 /* QuestionnaireView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +254,7 @@
 				AA59787A13D3596A00A994CB /* SBJsonWriter.m in Sources */,
 				AA095D2413D36CF7000A7CAD /* Sighting.m in Sources */,
 				AA04028513D6058E00BBB312 /* GetPhotoController.m in Sources */,
+				AAA2B81F13D8B9A300AED599 /* QuestionnaireView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

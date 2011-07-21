@@ -12,6 +12,7 @@
 #import "GetPhotoController.h"
 #import "JSON/JSON.h"
 #import "Sighting.h"
+#import "QuestionnaireView.h"
 
 
 @implementation AddSightingController
@@ -32,6 +33,7 @@
 @synthesize newSighting;
 
 @synthesize currentURL;
+@synthesize sightingURL;
 
 
 
@@ -119,6 +121,13 @@
 
 	if (! editing) {
 		[self uploadImage];
+		
+		QuestionnaireView *qv = [[QuestionnaireView alloc]
+								  initWithNibName:@"QuestionnaireView" bundle:nil];
+		[qv setDelegate:self];
+		[self presentModalViewController:qv animated:YES];
+		[qv release];
+		
 		
 		iAssessDelegate *delegate =
 			(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
@@ -248,6 +257,9 @@
 	NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
 	
 	NSLog(returnString);
+	
+	sightingURL = [[NSURL alloc] initWithString:returnString];
+	
 }
 
 
@@ -405,5 +417,18 @@
 	newSighting.taxonPK = [[taxa objectAtIndex:[taxaPicker selectedRowInComponent:0]] objectAtIndex:0];
 	[self updateUIInfo];
 }
+
+#pragma mark QuestionnaireDelegate methods
+
+- (void)questionnaireView:(QuestionnaireView *)qv
+		 setURLForWebView:(UIWebView *)wv {
+	
+	//URL Requst Object
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:sightingURL];
+	
+	//Load the request in the UIWebView.
+	[wv loadRequest:requestObj];
+}
+
 
 @end
