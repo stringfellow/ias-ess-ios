@@ -7,7 +7,7 @@
 //
 
 #import "QuestionnaireView.h"
-
+#import "iAssessDelegate.h"
 
 @implementation QuestionnaireView
 
@@ -55,6 +55,12 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (IBAction)done:(id)sender {
+	NSLog(@"DONE!");
+	//DEBUG MEEEEEEEEEEE!
+	[self.delegate dismissQuestionnaireView:self];
+	//NSLog(@"DONE DID IT!");
+}
 
 - (void)dealloc {
     [super dealloc];

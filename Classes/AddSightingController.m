@@ -245,7 +245,7 @@
 	
 	//image
 	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"photo\"; filename=\"iPhonePhoto.jpg\"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"image\"; filename=\"iPhonePhoto.jpg\"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
 	[body appendData:[[NSString stringWithString:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
 	[body appendData:[NSData dataWithData:imageData]];
 	[body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
@@ -256,7 +256,7 @@
 	NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
 	NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
 	
-	NSLog(returnString);
+	//NSLog(returnString);
 	
 	sightingURL = [[NSURL alloc] initWithString:returnString];
 	
@@ -430,5 +430,11 @@
 	[wv loadRequest:requestObj];
 }
 
+- (void)dismissQuestionnaireView:(QuestionnaireView *)qv {
+	NSLog(@"Dismiss!");
+	//DEBUG MEEEEEEEEEEE!
+	//[self dismissModalViewControllerAnimated:YES];
+	NSLog(@"Dismissed!");
+}
 
 @end

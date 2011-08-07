@@ -24,8 +24,12 @@
 
 @end
 
+
 @protocol QuestionnaireDelegate <NSObject>
 
 - (void)questionnaireView:(QuestionnaireView *)qv
                    setURLForWebView:(UIWebView *)wv;
+
+- (void)dismissQuestionnaireView:(QuestionnaireView *)qv;
+
 @end
