@@ -7,21 +7,19 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
-#import "AddSightingController.h"
+#import "AddSightingViewController.h"
 #import "iAssessDelegate.h"
-#import "GetPhotoController.h"
 #import "JSON/JSON.h"
 #import "Sighting.h"
-#import "QuestionnaireView.h"
+#import "QuestionnaireViewController.h"
 
 
-@implementation AddSightingController
+@implementation AddSightingViewController
 
 @synthesize taxaPicker;
 @synthesize taxaCell;
 
 @synthesize imageView;
-@synthesize imagePicker;
 @synthesize imageCell;
 @synthesize taxaLabel;
 
@@ -52,9 +50,14 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	
+	self.title = @"Add sighting";
+
+	// Should move this taxa stuff out into its own class (dedicated to fetching data from the web service)
 	iAssessDelegate *delegate =
 		(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
 	taxa = delegate.taxa;
+	
 	responseData = [[NSMutableData data] retain];
 	newSighting = [[Sighting alloc] init];
 	locationManager = [[CLLocationManager alloc] init];
@@ -71,15 +74,9 @@
 	taxaPicker.showsSelectionIndicator = YES;
 	
 	
-	self.title = @"Add sighting";
-	imagePicker = [[UIImagePickerController alloc] init];
-	imagePicker.allowsEditing = YES;
-	imagePicker.delegate = self;
-	imagePicker.sourceType = 
-		UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-	
-	[self setEditing:YES animated:YES];
-	self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonClicked:)];
+	self.navigationItem.rightBarButtonItem = doneButton;
+	[doneButton release];
 	
 	if ([taxa count] == 0) {
 		[self getTaxa];
@@ -115,25 +112,17 @@
     [super dealloc];
 }
 
-# pragma mark UIViewControllerDataSource
-
-- (void)setEditing:(BOOL)editing animated:(BOOL) animated {
-
-	if (! editing) {
-		[self uploadImage];
+- (void)doneButtonClicked:(id)sender
+{
+	[self uploadImage];
 		
-		QuestionnaireView *qv = [[QuestionnaireView alloc]
-								  initWithNibName:@"QuestionnaireView" bundle:nil];
-		[qv setDelegate:self];
-		[self presentModalViewController:qv animated:YES];
-		[qv release];
-		
-		
-		iAssessDelegate *delegate =
-			(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
-		[delegate.navController popViewControllerAnimated:YES];
-	}
-	[super setEditing:editing animated:animated];
+	QuestionnaireViewController *qv = [[QuestionnaireViewController alloc] initWithNibName:@"QuestionnaireViewController" bundle:nil];
+	qv.delegate = self;
+	[self presentModalViewController:qv animated:YES];
+	[qv release];
+	
+	// We'll dismiss the current view later (when the modal view is dismissed) - it looks neater and it's more obvious to the user what is happening
+	self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 
 
@@ -178,11 +167,53 @@
 }
 
 - (IBAction)addImage:(id)sender {
-	GetPhotoController *gp = [[GetPhotoController alloc]
-							  initWithNibName:@"GetPhotoController" bundle:nil];
-	[gp setDelegate:self];
-	[self presentModalViewController:gp animated:YES];
-	[gp release];
+	
+	BOOL cameraAvailable = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
+	BOOL photosAvailable = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary];
+	
+	// There's probably a slightly more concise way of doing this...
+	UIActionSheet *actionSheet;
+	
+	if (cameraAvailable && photosAvailable)
+	{
+		actionSheet = [[UIActionSheet alloc] initWithTitle:nil 
+																 delegate:self 
+														cancelButtonTitle:@"Cancel" 
+												   destructiveButtonTitle:nil 
+														otherButtonTitles:@"Take Photo", @"Choose Existing", nil];
+	} else if (cameraAvailable)
+	{
+		actionSheet = [[UIActionSheet alloc] initWithTitle:nil 
+																 delegate:self 
+														cancelButtonTitle:@"Cancel" 
+												   destructiveButtonTitle:nil 
+														otherButtonTitles:@"Take Photo", nil];
+	} else if (photosAvailable) 
+	{
+		actionSheet = [[UIActionSheet alloc] initWithTitle:nil 
+																 delegate:self 
+														cancelButtonTitle:@"Cancel" 
+												   destructiveButtonTitle:nil 
+														otherButtonTitles:@"Choose Existing", nil];	
+	} else 
+	{
+		// Display alert - no images available!
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No photo source available" 
+														message:@"Your device doesn't appear to have a camera or photo library, so you can't add any photos!" 
+													   delegate:nil 
+											  cancelButtonTitle:@"Back" 
+											  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+
+	if (actionSheet)
+	{
+		actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+
+		[actionSheet showInView:self.view];
+		[actionSheet release];
+	}
 }
 
 - (void)updateUIInfo {
@@ -360,19 +391,6 @@
 	
 }
 
-#pragma mark GetPhotoDelegate Methods
-
-
-- (void)photoGetViewController:(GetPhotoController *)photoGetController
-				   didGetPhoto:(UIImage *)photo {
-	if (photo) {
-		newSighting.photo = photo;
-		[self updateUIInfo];
-	}
-	[self dismissModalViewControllerAnimated:YES];
-}
-
-
 #pragma mark UITableViewDataSource Delegate Methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -413,28 +431,66 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    newSighting.taxonName = [self pickerView:taxaPicker titleForRow:[taxaPicker selectedRowInComponent:0] forComponent:0];
-	newSighting.taxonPK = [[taxa objectAtIndex:[taxaPicker selectedRowInComponent:0]] objectAtIndex:0];
-	[self updateUIInfo];
+	if (buttonIndex == actionSheet.cancelButtonIndex)
+		return;
+	
+	if (actionSheet.title == @"Select taxon")	// should do this more neatly, but for now we'll just detect which actionsheet we're dealing with by the title
+	{
+		newSighting.taxonName = [self pickerView:taxaPicker titleForRow:[taxaPicker selectedRowInComponent:0] forComponent:0];
+		newSighting.taxonPK = [[taxa objectAtIndex:[taxaPicker selectedRowInComponent:0]] objectAtIndex:0];
+		[self updateUIInfo];
+	}
+	else 
+	{
+		// for now we'll just assume it's the image picker sheet
+		UIImagePickerController	*imagePicker = [[UIImagePickerController alloc] init];
+		imagePicker.delegate = self;
+		
+		if ([actionSheet buttonTitleAtIndex:buttonIndex] == @"Take Photo")
+			imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+		else if ([actionSheet buttonTitleAtIndex:buttonIndex] == @"Choose Existing")
+			imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+		
+		[self presentModalViewController:imagePicker animated:YES];
+		[imagePicker release];
+	}
+
 }
+
+#pragma mark UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
+    
+    newSighting.photo = image;
+	[self updateUIInfo];
+	
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+	[self dismissModalViewControllerAnimated:YES];
+}
+
 
 #pragma mark QuestionnaireDelegate methods
 
-- (void)questionnaireView:(QuestionnaireView *)qv
-		 setURLForWebView:(UIWebView *)wv {
+- (NSURL *)questionnaireView:(QuestionnaireViewController *)qv
+			URLForWebView:(UIWebView *)wv {
 	
-	//URL Requst Object
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:sightingURL];
-	
-	//Load the request in the UIWebView.
-	[wv loadRequest:requestObj];
+	return sightingURL;
 }
 
-- (void)dismissQuestionnaireView:(QuestionnaireView *)qv {
+- (void)dismissQuestionnaireView:(QuestionnaireViewController *)qv {
 	NSLog(@"Dismiss!");
-	//DEBUG MEEEEEEEEEEE!
-	//[self dismissModalViewControllerAnimated:YES];
+	[self dismissModalViewControllerAnimated:YES];
 	NSLog(@"Dismissed!");
+}
+
+- (void)questionnaireViewDidDisappear:(QuestionnaireViewController *)qv {
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

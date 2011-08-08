@@ -10,10 +10,7 @@
 
 @protocol QuestionnaireDelegate;
 
-@interface QuestionnaireView : UIViewController <UINavigationControllerDelegate> {
-
-	UIWebView *webView;
-	id <QuestionnaireDelegate> delegate;
+@interface QuestionnaireViewController : UIViewController {
 	
 }
 
@@ -27,9 +24,10 @@
 
 @protocol QuestionnaireDelegate <NSObject>
 
-- (void)questionnaireView:(QuestionnaireView *)qv
-                   setURLForWebView:(UIWebView *)wv;
+- (NSURL *)questionnaireView:(QuestionnaireViewController *)qv
+			URLForWebView:(UIWebView *)wv;
 
-- (void)dismissQuestionnaireView:(QuestionnaireView *)qv;
+- (void)dismissQuestionnaireView:(QuestionnaireViewController *)qv;
+- (void)questionnaireViewDidDisappear:(QuestionnaireViewController *)qv;
 
 @end

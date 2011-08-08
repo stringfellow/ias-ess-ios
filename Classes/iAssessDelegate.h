@@ -11,17 +11,17 @@
 extern NSString * const API_TAXA_LIST;
 extern NSString * const API_SIGHTING_POST;
 
-@class RootController;
+@class RootViewController;
 
 @interface iAssessDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    RootController *viewController;
+    RootViewController *viewController;
 	UINavigationController *navController;
 	NSMutableArray *taxa;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet RootController *viewController;
+@property (nonatomic, retain) IBOutlet RootViewController *viewController;
 @property (nonatomic, retain) IBOutlet UINavigationController *navController;
 @property (nonatomic, retain) NSMutableArray *taxa;
 

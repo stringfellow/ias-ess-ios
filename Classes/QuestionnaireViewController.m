@@ -1,23 +1,18 @@
 //
-//  GetPhoto.m
+//  QuestionnaireView.m
 //  iAssess
 //
-//  Created by Steve Pike on 17/07/2011.
+//  Created by Steve Pike on 21/07/2011.
 //  Copyright 2011 Synfinity (steve@synfinity.net). All rights reserved.
 //
 
-#import "GetPhotoController.h"
+#import "QuestionnaireViewController.h"
 #import "iAssessDelegate.h"
-#import "Sighting.h"
 
+@implementation QuestionnaireViewController
 
-@implementation GetPhotoController
-
-@synthesize imagePicker;
-@synthesize imageView;
-@synthesize newSighting;
+@synthesize webView;
 @synthesize delegate;
-
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -33,14 +28,15 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	imagePicker = [[UIImagePickerController alloc] init];
-	imagePicker.allowsEditing = YES;
-	imagePicker.delegate = self;
-	
-    [super viewDidLoad];
+	[super viewDidLoad];
+
+	if (self.delegate) [webView loadRequest:[NSURLRequest requestWithURL:[self.delegate questionnaireView:self URLForWebView:webView]]];
 }
 
-
+- (void)viewDidDisappear:(BOOL)animated
+{
+	if (self.delegate) [self.delegate questionnaireViewDidDisappear:self];
+}
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -62,44 +58,16 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (IBAction)done:(id)sender {
+	NSLog(@"DONE!");
+	//DEBUG MEEEEEEEEEEE!
+	[self.delegate dismissQuestionnaireView:self];
+	//NSLog(@"DONE DID IT!");
+}
 
 - (void)dealloc {
     [super dealloc];
 }
-
-#pragma mark My Stuff
-
-- (IBAction)showPicker:(id)sender {
-	imagePicker.sourceType = 
-	UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-	[self presentModalViewController:imagePicker animated:YES];
-}
-
-- (IBAction)showCamera:(id)sender {
-	imagePicker.sourceType = 
-	UIImagePickerControllerSourceTypeCamera;
-	[self presentModalViewController:imagePicker animated:YES];
-}
-
-- (IBAction)done:(id)sender {
-	[self.delegate photoGetViewController:self
-							  didGetPhoto:imageView.image];
-}
-
-
-#pragma mark UIImagePickerControllerDelegate Methods
-
-
-- (void)imagePickerController:(UIImagePickerController *)picker
-didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-	[self dismissModalViewControllerAnimated:YES];
-	//[picker release];
-	NSLog(@"%@", info);
-	imageView.image = [info objectForKey:@"UIImagePickerControllerEditedImage"];
-}
-
-
 
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "iAssessDelegate.h"
-#import "RootController.h"
+#import "RootViewController.h"
 
 @implementation iAssessDelegate
 
@@ -19,8 +19,8 @@
 //NSString * const API_ROOT = @"http://ias-ess.appspot.com";
 
 
-NSString * const API_TAXA_LIST =  @"http://localhost:8080/api/taxa/list";
-NSString * const API_SIGHTING_POST = @"http://localhost:8080/api/sighting";
+NSString * const API_TAXA_LIST =  @"http://ias-ess.appspot.com/api/taxa/list";
+NSString * const API_SIGHTING_POST = @"http://ias-ess.appspot.com/api/sighting";
 
 #pragma mark -
 #pragma mark Application lifecycle

@@ -6,11 +6,10 @@
 //  Copyright 2011 Synfinity (steve@synfinity.net). All rights reserved.
 //
 
-#import "RootController.h"
-#import "iAssessDelegate.h"
-#import "AddSightingController.h"
+#import "RootViewController.h"
+#import "AddSightingViewController.h"
 
-@implementation RootController
+@implementation RootViewController
 
 @synthesize tableView;
 
@@ -74,14 +73,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tv
 		 cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = 
-	[tv dequeueReusableCellWithIdentifier:@"cell"];
+	UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
+
 	if (nil == cell) {
-		cell = [[[UITableViewCell alloc]
-				 initWithFrame:CGRectZero reuseIdentifier:@"cell"] autorelease];
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"cell"] autorelease];
 	}
 	
-	switch ([indexPath indexAtPosition:1]) 
+	switch (indexPath.row) 
 	{
 		case 0: cell.textLabel.text = @"Add sighting";
 			break;
@@ -102,15 +100,11 @@
 
 #pragma mark UITableViewDelegate Methods
 
-- (void)tableView:(UITableView *)tv
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	iAssessDelegate *delegate =
-	(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
-	AddSightingController *sighting = [[AddSightingController alloc] init];
-	
-	if ([indexPath indexAtPosition:1] == 0) {
-		[delegate.navController pushViewController:sighting animated:YES];
+	if (indexPath.row == 0) {
+		AddSightingViewController *sighting = [[AddSightingViewController alloc] init];
+		[self.navigationController pushViewController:sighting animated:YES];
 		[sighting release];
 	}	
 		

@@ -9,16 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "Sighting.h"
-#import "GetPhotoController.h"
-#import "QuestionnaireView.h"
+#import "QuestionnaireViewController.h"
 
-@interface AddSightingController : UIViewController 
+@interface AddSightingViewController : UIViewController 
 	<
 		UIPickerViewDataSource, UIPickerViewDelegate,
 		CLLocationManagerDelegate,
 		UIImagePickerControllerDelegate,
 		UINavigationControllerDelegate,
-		GetPhotoDelegate,
 		UITableViewDataSource, UITableViewDelegate,
 		UIActionSheetDelegate,
 		QuestionnaireDelegate
@@ -26,27 +24,11 @@
 	
 	UIPickerView *taxaPicker;
 	CLLocationManager *locationManager;
-	MKMapView *mapView;
-		
-	UIImagePickerController *imagePicker;
-	UIImageView *imageView;
-	UITableView *tableView;
-	UILabel *taxaLabel;
 	
-	UITableViewCell *imageCell;
-	UITableViewCell *taxaCell;
-	UITableViewCell *locationCell;
-	
-	NSURL *currentURL;
-	NSURL *sightingURL;
-		
 	NSMutableArray *taxa;
 	NSMutableData *responseData;
-	Sighting *newSighting;
 
 }
-
-@property (nonatomic, retain) IBOutlet UIImagePickerController *imagePicker;
 
 @property (nonatomic, retain) IBOutlet UIPickerView *taxaPicker;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
