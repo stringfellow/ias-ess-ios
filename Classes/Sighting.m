@@ -17,6 +17,7 @@
 @synthesize email;
 @synthesize dateTime;
 @synthesize photo;
+@synthesize thumbnail;
 @synthesize contactable;
 
 -(void) dealloc {
@@ -27,6 +28,7 @@
 	[contactable release];
 	[dateTime release];
 	[photo release];
+	[thumbnail release];
 	[super dealloc];
 }
 

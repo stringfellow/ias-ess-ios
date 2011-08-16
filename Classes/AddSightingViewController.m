@@ -12,6 +12,7 @@
 #import "JSON/JSON.h"
 #import "Sighting.h"
 #import "QuestionnaireViewController.h"
+#import "UIImage+Resize.h"
 
 
 @implementation AddSightingViewController
@@ -128,11 +129,63 @@
 
 # pragma mark My Stuff
 
+- (void)saveTaxaToPList {
+	NSError *error;
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
+	NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+	NSString *path = [documentsDirectory stringByAppendingPathComponent:@"data.plist"]; //3
+	
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	
+	if (![fileManager fileExistsAtPath: path]) //4
+	{
+		NSString *bundle = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"]; //5
+		
+		[fileManager copyItemAtPath:bundle toPath: path error:&error]; //6
+	}
+
+	
+	NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile: path];
+		
+	[data setObject:taxa forKey:@"taxa"];
+	
+	[data writeToFile: path atomically:YES];
+	[data release];
+}
+
+- (void)loadTaxaFromPList {
+	NSError *error;
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //1
+	NSString *documentsDirectory = [paths objectAtIndex:0]; //2
+	NSString *path = [documentsDirectory stringByAppendingPathComponent:@"data.plist"]; //3
+	
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	
+	if (![fileManager fileExistsAtPath: path]) //4
+	{
+		NSString *bundle = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"]; //5
+		
+		[fileManager copyItemAtPath:bundle toPath: path error:&error]; //6
+	}
+	
+	NSMutableDictionary *savedData = [[NSMutableDictionary alloc] initWithContentsOfFile: path];
+	
+	NSArray *taxaList = [savedData objectForKey:@"taxa"];
+	
+	for (int i = 0; i < [taxaList count]; i++)
+		[taxa addObject:[taxaList objectAtIndex:i]];
+	
+	[taxaPicker reloadAllComponents];
+	
+	[savedData release];
+}
+
 - (void)getTaxa {
 	NSURL *url = [[NSURL URLWithString:API_TAXA_LIST] retain];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	[[NSURLConnection alloc]
 	 initWithRequest:request delegate:self];
+	NSLog(@"GET TAXA");
 }
 
 - (IBAction)pickTaxa:(id)sender {
@@ -217,10 +270,15 @@
 }
 
 - (void)updateUIInfo {
+	NSLog(@"UPDATE UI");
 	[mapView setCenterCoordinate:newSighting.location.coordinate animated:YES];
-	//NSLog(@"Location: %@", newSighting.location.coordinate);
-	imageView.image = newSighting.photo;
+	
+	imageView.image = newSighting.thumbnail;
+	
 	taxaLabel.text = newSighting.taxonName;
+	//NSLog(@"photo: %@", newSighting.photo);
+	//NSLog(@"photo: %@", newSighting.thumbnail);
+	
 }
 
 
@@ -235,7 +293,7 @@
 - (IBAction)uploadImage {
 
 	UIImage *image = [imageView image];
-	NSData *imageData = UIImageJPEGRepresentation(image, 90);
+	NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
 	
 	// setting up the request object now
 	NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
@@ -322,6 +380,7 @@
   didFailWithError:(NSError *)error
 {
 	NSLog(@"Error in req.: %@", error);
+	[self loadTaxaFromPList];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
@@ -336,6 +395,7 @@
 	for (int i = 0; i < [taxaList count]; i++)
 		[taxa addObject:[taxaList objectAtIndex:i]];
 
+	[self saveTaxaToPList];
 	[taxaPicker reloadAllComponents];
 }
 
@@ -420,7 +480,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	switch ( indexPath.row ){
-		case 0: return 210;
+		case 0: return 140;
 		case 1: return 44;
 		case 2: return 210;
 	}
@@ -431,17 +491,20 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-	if (buttonIndex == actionSheet.cancelButtonIndex)
-		return;
 	
 	if (actionSheet.title == @"Select taxon")	// should do this more neatly, but for now we'll just detect which actionsheet we're dealing with by the title
 	{
+		if (![taxaPicker numberOfRowsInComponent: 0])
+			return;
 		newSighting.taxonName = [self pickerView:taxaPicker titleForRow:[taxaPicker selectedRowInComponent:0] forComponent:0];
 		newSighting.taxonPK = [[taxa objectAtIndex:[taxaPicker selectedRowInComponent:0]] objectAtIndex:0];
 		[self updateUIInfo];
 	}
 	else 
 	{
+		if (buttonIndex == actionSheet.cancelButtonIndex)
+			return;
+		
 		// for now we'll just assume it's the image picker sheet
 		UIImagePickerController	*imagePicker = [[UIImagePickerController alloc] init];
 		imagePicker.delegate = self;
@@ -461,9 +524,21 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    
+	UIImage *image = [info valueForKey:UIImagePickerControllerEditedImage];
+	if (!image)
+		image = [info valueForKey:UIImagePickerControllerOriginalImage];
+	
+	//if (!image)
+	//	NSLog(@"NO BLOODY IMAGE!");
     newSighting.photo = image;
+	//if (!newSighting.photo)
+	//	NSLog(@"NO BLOODY PHOTO!");
+	newSighting.thumbnail = [image thumbnailImage:100
+							transparentBorder:1
+							cornerRadius: 15
+							interpolationQuality:3];
+	//if (!newSighting.thumbnail)
+	//	NSLog(@"NO BLOODY THUMB!");
 	[self updateUIInfo];
 	
 	[self dismissModalViewControllerAnimated:YES];

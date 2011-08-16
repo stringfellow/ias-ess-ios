@@ -85,7 +85,7 @@
 			break;
 		case 1: cell.textLabel.text = @"About";
 			break;
-		case 2: cell.textLabel.text = @"Something";
+		case 2: cell.textLabel.text = @"Go to website";
 			break;
 			
 	}
@@ -106,7 +106,19 @@
 		AddSightingViewController *sighting = [[AddSightingViewController alloc] init];
 		[self.navigationController pushViewController:sighting animated:YES];
 		[sighting release];
-	}	
+	}
+	if (indexPath.row == 1) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"iAssess"
+														message:@"iAssess provides a quick way to log sightings of Invasive Alien Species (IAS). See http://ias-ess.appspot.com for more details."
+													   delegate:nil
+											  cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+		[alert autorelease];
+		[alert show];
+	}
+	if (indexPath.row == 2){
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://ias-ess.appspot.com"]];
+	}
 		
 	[tv deselectRowAtIndexPath:indexPath animated:YES];
 }

@@ -18,6 +18,7 @@
 	NSNumber *contactable;
 	NSDate *dateTime;
 	UIImage *photo;
+	UIImage *thumbnail;
 }
 
 @property (nonatomic, retain) NSString *taxonName;
@@ -27,7 +28,7 @@
 @property (nonatomic, retain) NSNumber *contactable;
 @property (nonatomic, retain) NSDate *dateTime;
 @property (nonatomic, retain) UIImage *photo;
-
+@property (nonatomic, retain) UIImage *thumbnail;
 
 
 @end

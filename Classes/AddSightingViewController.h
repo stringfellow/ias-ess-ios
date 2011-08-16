@@ -45,7 +45,8 @@
 
 @property (nonatomic, retain) IBOutlet Sighting *newSighting;
 
-
+- (void) saveTaxaToPList;
+- (void) loadTaxaFromPList;
 - (void) getTaxa;
 - (IBAction)addImage:(id)sender;
 - (IBAction)doneImage:(id)sender;

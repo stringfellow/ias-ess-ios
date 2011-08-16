@@ -16,9 +16,14 @@
 		2899E5220DE3E06400AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* RootViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* RootViewController.m */; };
+		AA06321E13FAFF2200FE2028 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06321D13FAFF2200FE2028 /* UIImage+Resize.m */; };
+		AA06323C13FB037900FE2028 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06323913FB037900FE2028 /* UIImage+Alpha.m */; };
+		AA06323D13FB037900FE2028 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06323B13FB037900FE2028 /* UIImage+RoundedCorner.m */; };
+		AA0632C013FB12AE00FE2028 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA0632BF13FB12AE00FE2028 /* data.plist */; };
 		AA095D2413D36CF7000A7CAD /* Sighting.m in Sources */ = {isa = PBXBuildFile; fileRef = AA095D2313D36CF7000A7CAD /* Sighting.m */; };
 		AA095D2C13D36EED000A7CAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA095D2B13D36EED000A7CAD /* CoreLocation.framework */; };
 		AA095DAD13D38167000A7CAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA095DAC13D38167000A7CAD /* MapKit.framework */; };
+		AA3FA9C313F08A9000099784 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3FA9C213F08A9000099784 /* Icon.png */; };
 		AA5977C013D341C600A994CB /* AddSightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5977BE13D341C600A994CB /* AddSightingViewController.m */; };
 		AA5977C113D341C600A994CB /* AddSightingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5977BF13D341C600A994CB /* AddSightingViewController.xib */; };
 		AA59787613D3596A00A994CB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AA59786D13D3596A00A994CB /* NSObject+SBJSON.m */; };
@@ -44,10 +49,18 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iAssess_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAssess_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iAssess-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iAssess-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AA06321C13FAFF2200FE2028 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		AA06321D13FAFF2200FE2028 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		AA06323813FB037900FE2028 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		AA06323913FB037900FE2028 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		AA06323A13FB037900FE2028 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		AA06323B13FB037900FE2028 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		AA0632BF13FB12AE00FE2028 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		AA095D2213D36CF7000A7CAD /* Sighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sighting.h; sourceTree = "<group>"; };
 		AA095D2313D36CF7000A7CAD /* Sighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sighting.m; sourceTree = "<group>"; };
 		AA095D2B13D36EED000A7CAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AA095DAC13D38167000A7CAD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AA3FA9C213F08A9000099784 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		AA5977BD13D341C600A994CB /* AddSightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSightingViewController.h; sourceTree = "<group>"; };
 		AA5977BE13D341C600A994CB /* AddSightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSightingViewController.m; sourceTree = "<group>"; };
 		AA5977BF13D341C600A994CB /* AddSightingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AddSightingViewController.xib; path = Classes/AddSightingViewController.xib; sourceTree = "<group>"; };
@@ -85,6 +98,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AA06323813FB037900FE2028 /* UIImage+Alpha.h */,
+				AA06323913FB037900FE2028 /* UIImage+Alpha.m */,
+				AA06323A13FB037900FE2028 /* UIImage+RoundedCorner.h */,
+				AA06323B13FB037900FE2028 /* UIImage+RoundedCorner.m */,
+				AA06321C13FAFF2200FE2028 /* UIImage+Resize.h */,
+				AA06321D13FAFF2200FE2028 /* UIImage+Resize.m */,
 				AA59786A13D3596A00A994CB /* JSON */,
 				1D3623240D0F684500981E51 /* iAssessDelegate.h */,
 				1D3623250D0F684500981E51 /* iAssessDelegate.m */,
@@ -133,11 +152,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA3FA9C213F08A9000099784 /* Icon.png */,
 				175FE3CE13EF3D2E00A79E80 /* QuestionnaireViewController.xib */,
 				AA5977BF13D341C600A994CB /* AddSightingViewController.xib */,
 				2899E5210DE3E06400AC0155 /* RootViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* iAssess-Info.plist */,
+				AA0632BF13FB12AE00FE2028 /* data.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -224,6 +245,8 @@
 				2899E5220DE3E06400AC0155 /* RootViewController.xib in Resources */,
 				AA5977C113D341C600A994CB /* AddSightingViewController.xib in Resources */,
 				175FE3CF13EF3D2E00A79E80 /* QuestionnaireViewController.xib in Resources */,
+				AA3FA9C313F08A9000099784 /* Icon.png in Resources */,
+				AA0632C013FB12AE00FE2028 /* data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +268,9 @@
 				AA59787A13D3596A00A994CB /* SBJsonWriter.m in Sources */,
 				AA095D2413D36CF7000A7CAD /* Sighting.m in Sources */,
 				AAA2B81F13D8B9A300AED599 /* QuestionnaireViewController.m in Sources */,
+				AA06321E13FAFF2200FE2028 /* UIImage+Resize.m in Sources */,
+				AA06323C13FB037900FE2028 /* UIImage+Alpha.m in Sources */,
+				AA06323D13FB037900FE2028 /* UIImage+RoundedCorner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
