@@ -26,6 +26,7 @@
 
 @synthesize mapView;
 @synthesize locationCell;
+@synthesize imageLocationSwitch;
 
 @synthesize tableView;
 
@@ -61,6 +62,8 @@
 	
 	responseData = [[NSMutableData data] retain];
 	newSighting = [[Sighting alloc] init];
+	newSighting.useImageLocation = [NSNumber numberWithBool:imageLocationSwitch.on];
+	
 	locationManager = [[CLLocationManager alloc] init];
 	locationManager.delegate = self;
 	if ([CLLocationManager locationServicesEnabled]) {
@@ -128,6 +131,10 @@
 
 
 # pragma mark My Stuff
+
+- (IBAction)switchLocationMethod:(id)sender {
+	newSighting.useImageLocation = [NSNumber numberWithBool:imageLocationSwitch.on];
+}
 
 - (void)saveTaxaToPList {
 	NSError *error;
@@ -271,13 +278,20 @@
 
 - (void)updateUIInfo {
 	NSLog(@"UPDATE UI");
+	
+	if ([newSighting.useImageLocation boolValue] == YES) {
+			// TODO: Get EXIF GPS
+	}
+	
 	[mapView setCenterCoordinate:newSighting.location.coordinate animated:YES];
+	// a little bit arbitrary!
+	MKCoordinateSpan span = {latitudeDelta: 0.001, longitudeDelta: 0.001};
+	MKCoordinateRegion region = {newSighting.location.coordinate, span};
+	[mapView setRegion:region animated: YES];
 	
 	imageView.image = newSighting.thumbnail;
 	
 	taxaLabel.text = newSighting.taxonName;
-	//NSLog(@"photo: %@", newSighting.photo);
-	//NSLog(@"photo: %@", newSighting.thumbnail);
 	
 }
 
@@ -429,25 +443,29 @@
 	didUpdateToLocation:(CLLocation *)newLocation
 	fromLocation:(CLLocation *)oldLocation
 {
-	newSighting.location = newLocation;
-	newSighting.dateTime = newLocation.timestamp;
-	[self updateUIInfo];
+	if ([newSighting.useImageLocation boolValue] == NO) {
+		newSighting.location = newLocation;
+		newSighting.dateTime = newLocation.timestamp;
+		[self updateUIInfo];
+	}
 
 }
 
 - (void)locationManager:(CLLocationManager *)manager
     didFailWithError:(NSError *)error
 {
-	NSLog(@"Location error: %@", error);
-	UIAlertView *alert = [[UIAlertView alloc]
-						  initWithTitle:@"Location error"
-						  message:@"Couldn't get location."
-						  delegate:self
-						  cancelButtonTitle:nil
-						  otherButtonTitles:@"OK", nil];
-	
-	[alert show];
-	[alert autorelease];
+	if ([newSighting.useImageLocation boolValue] == NO) {
+		NSLog(@"Location error: %@", error);
+		UIAlertView *alert = [[UIAlertView alloc]
+							  initWithTitle:@"Location error"
+							  message:@"Couldn't get location."
+							  delegate:self
+							  cancelButtonTitle:nil
+							  otherButtonTitles:@"OK", nil];
+		
+		[alert show];
+		[alert autorelease];
+	}
 	
 }
 
@@ -482,7 +500,7 @@
 	switch ( indexPath.row ){
 		case 0: return 140;
 		case 1: return 44;
-		case 2: return 210;
+		case 2: return 197;
 	}
 	return 44;
 }
@@ -524,6 +542,11 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+	
+	//NSDictionary *meta = [info valueForKey:UIImagePickerControllerMediaMetadata];
+	//NSLog(@"info: %@", info);	
+	//NSLog(@"meta: %@", meta);
+	
 	UIImage *image = [info valueForKey:UIImagePickerControllerEditedImage];
 	if (!image)
 		image = [info valueForKey:UIImagePickerControllerOriginalImage];

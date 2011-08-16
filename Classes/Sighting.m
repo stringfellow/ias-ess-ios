@@ -14,6 +14,7 @@
 @synthesize taxonName;
 @synthesize taxonPK;
 @synthesize location;
+@synthesize useImageLocation;
 @synthesize email;
 @synthesize dateTime;
 @synthesize photo;
@@ -24,6 +25,7 @@
 	[taxonName release];
 	[taxonPK release];
 	[location release];
+	[useImageLocation release];
 	[email release];
 	[contactable release];
 	[dateTime release];

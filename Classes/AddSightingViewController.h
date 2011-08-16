@@ -39,6 +39,7 @@
 @property (nonatomic, retain) IBOutlet UITableViewCell *imageCell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *taxaCell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *locationCell;
+@property (nonatomic, retain) IBOutlet UISwitch *imageLocationSwitch;
 
 @property (nonatomic, retain) IBOutlet NSURL *currentURL;
 @property (nonatomic, retain) IBOutlet NSURL *sightingURL;
@@ -51,6 +52,7 @@
 - (IBAction)addImage:(id)sender;
 - (IBAction)doneImage:(id)sender;
 - (IBAction)pickTaxa:(id)sender;
+- (IBAction)switchLocationMethod:(id)sender;
 - (IBAction)updateUIInfo;
 - (IBAction)uploadImage;
 
