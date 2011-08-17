@@ -49,6 +49,14 @@
 }
 */
 
+- (id) initWithEmailAddress:(NSString *) email
+{
+    if(self = [super initWithNibName: @"AddSightingViewController" bundle: nil]){
+		emailAddress = email;
+    }
+    return self;
+}
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -179,10 +187,12 @@
 	
 	NSArray *taxaList = [savedData objectForKey:@"taxa"];
 	
-	for (int i = 0; i < [taxaList count]; i++)
-		[taxa addObject:[taxaList objectAtIndex:i]];
-	
-	[taxaPicker reloadAllComponents];
+	if (taxaList){
+		for (int i = 0; i < [taxaList count]; i++)
+			[taxa addObject:[taxaList objectAtIndex:i]];
+		
+		[taxaPicker reloadAllComponents];
+	}
 	
 	[savedData release];
 }
@@ -306,8 +316,8 @@
 
 - (IBAction)uploadImage {
 
-	UIImage *image = [imageView image];
-	NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
+	UIImage *image = newSighting.photo;
+	NSData *imageData = UIImageJPEGRepresentation(image, 0.2);
 	
 	// setting up the request object now
 	NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
@@ -345,11 +355,17 @@
 	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"taxon\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
 	[body appendData:[[NSString stringWithFormat:@"%@", newSighting.taxonPK] dataUsingEncoding:NSUTF8StringEncoding]];
 	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+
+	//email
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"email\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"%@", emailAddress] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	
 	
 	//image
 	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
 	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"image\"; filename=\"iPhonePhoto.jpg\"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
-	[body appendData:[[NSString stringWithString:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Type: image/jpeg\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
 	[body appendData:[NSData dataWithData:imageData]];
 	[body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
 	// setting the body of the post to the reqeust

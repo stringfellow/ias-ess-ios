@@ -11,9 +11,27 @@
 @interface RootViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> 
 {
 	UITableView *tableView;
+	UITextField *activeField;
+	UITextField *emailField;
+	UITableViewCell *emailCell;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) IBOutlet UITextField *activeField;
+@property (nonatomic, retain) IBOutlet UITextField *emailField;
+@property (nonatomic, retain) IBOutlet UITableViewCell *emailCell;
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField;
+- (void)textFieldDidEndEditing:(UITextField *)textField;
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification;
+- (void)keyboardWasShown:(NSNotification*)aNotification;
+- (void)registerForKeyboardNotifications;
+- (IBAction)textFieldReturn:(id)sender;
+//- (IBAction)backgroundTouched:(id)sender;
+- (void)savePrefsToPList;
+- (void)loadPrefsFromPList;
+
+
 
 @end
 

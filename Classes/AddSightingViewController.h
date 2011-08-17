@@ -27,6 +27,8 @@
 	
 	NSMutableArray *taxa;
 	NSMutableData *responseData;
+		
+	NSString *emailAddress;
 
 }
 
@@ -55,5 +57,7 @@
 - (IBAction)switchLocationMethod:(id)sender;
 - (IBAction)updateUIInfo;
 - (IBAction)uploadImage;
+
+- (id) initWithEmailAddress:(NSString *) email;
 
 @end
