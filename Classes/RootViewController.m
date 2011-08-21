@@ -214,9 +214,7 @@
 				break;
 		} break;
 		case 1: switch (indexPath.row) {
-			case 0: cell.textLabel.text = @"Another one";
-				break;
-			case 1: cell = emailCell;
+			case 0: cell = emailCell;
 				break;
 		}
 	}
@@ -243,7 +241,7 @@
 		return 3;
 	}
 	if (section == 1){
-		return 2;
+		return 1;
 	}
 	return 0;
 }
@@ -252,24 +250,25 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (indexPath.row == 0) {
-		AddSightingViewController *sighting = [[AddSightingViewController alloc] initWithEmailAddress: emailField.text];
-		[self.navigationController pushViewController:sighting animated:YES];
-		[sighting release];
+	if (indexPath.section == 0){
+		if (indexPath.row == 0) {
+			AddSightingViewController *sighting = [[AddSightingViewController alloc] initWithEmailAddress: emailField.text];
+			[self.navigationController pushViewController:sighting animated:YES];
+			[sighting release];
+		}
+		if (indexPath.row == 1) {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"iAssess"
+															message:@"iAssess provides a quick way to log sightings of Invasive Alien Species (IAS). See http://ias-ess.appspot.com for more details."
+														   delegate:nil
+												  cancelButtonTitle:@"OK"
+												  otherButtonTitles:nil];
+			[alert autorelease];
+			[alert show];
+		}
+		if (indexPath.row == 2){
+			[[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://ias-ess.appspot.com"]];
+		}
 	}
-	if (indexPath.row == 1) {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"iAssess"
-														message:@"iAssess provides a quick way to log sightings of Invasive Alien Species (IAS). See http://ias-ess.appspot.com for more details."
-													   delegate:nil
-											  cancelButtonTitle:@"OK"
-											  otherButtonTitles:nil];
-		[alert autorelease];
-		[alert show];
-	}
-	if (indexPath.row == 2){
-		[[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://ias-ess.appspot.com"]];
-	}
-		
 	[tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 

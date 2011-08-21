@@ -114,6 +114,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+	[responseData release];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -202,7 +203,8 @@
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	[[NSURLConnection alloc]
 	 initWithRequest:request delegate:self];
-	NSLog(@"GET TAXA");
+	//NSLog(@"GET TAXA");
+	[url release];
 }
 
 - (IBAction)pickTaxa:(id)sender {
@@ -233,7 +235,7 @@
 }
 
 - (IBAction)dismissActionSheet:(id)sender {
-	NSLog(@"DISMISS");
+	//NSLog(@"DISMISS");
 }
 
 - (IBAction)addImage:(id)sender {
@@ -287,7 +289,7 @@
 }
 
 - (void)updateUIInfo {
-	NSLog(@"UPDATE UI");
+	//NSLog(@"UPDATE UI");
 	
 	if ([newSighting.useImageLocation boolValue] == YES) {
 			// TODO: Get EXIF GPS
@@ -387,8 +389,8 @@
 - (void)connection:(NSURLConnection *)connection
 		didReceiveData:(NSData *)data
 {
-	NSLog(@"Connection: %@", connection);
-	NSLog(@"URL: %@", [currentURL path]);
+//	NSLog(@"Connection: %@", connection);
+//	NSLog(@"URL: %@", [currentURL path]);
 	[responseData appendData:data];
 }
 
@@ -448,7 +450,7 @@
 	titleForRow:(NSInteger)row
 	forComponent:(NSInteger)component
 {
-	NSLog(@"taxa: %@", taxa);
+	//NSLog(@"taxa: %@", taxa);
 	return [[taxa objectAtIndex:row] objectAtIndex:1];
 }
 
@@ -471,7 +473,7 @@
     didFailWithError:(NSError *)error
 {
 	if ([newSighting.useImageLocation boolValue] == NO) {
-		NSLog(@"Location error: %@", error);
+//		NSLog(@"Location error: %@", error);
 		UIAlertView *alert = [[UIAlertView alloc]
 							  initWithTitle:@"Location error"
 							  message:@"Couldn't get location."
@@ -598,9 +600,9 @@
 }
 
 - (void)dismissQuestionnaireView:(QuestionnaireViewController *)qv {
-	NSLog(@"Dismiss!");
+//	NSLog(@"Dismiss!");
 	[self dismissModalViewControllerAnimated:YES];
-	NSLog(@"Dismissed!");
+//	NSLog(@"Dismissed!");
 }
 
 - (void)questionnaireViewDidDisappear:(QuestionnaireViewController *)qv {
