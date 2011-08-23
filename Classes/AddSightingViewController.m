@@ -60,12 +60,13 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	
+	NSLog(@"VIEW LOADED");
 	self.title = @"Add sighting";
 
 	// Should move this taxa stuff out into its own class (dedicated to fetching data from the web service)
 	iAssessDelegate *delegate =
 		(iAssessDelegate *)[[UIApplication sharedApplication] delegate];
+
 	taxa = delegate.taxa;
 	
 	responseData = [[NSMutableData data] retain];
@@ -113,8 +114,9 @@
 }
 
 - (void)viewDidUnload {
+	NSLog(@"VIEW UNLOADED");
     [super viewDidUnload];
-	[responseData release];
+	NSLog(@"VIEW SUPER UNLOADED");
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

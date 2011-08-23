@@ -258,7 +258,7 @@
 		}
 		if (indexPath.row == 1) {
 			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"iAssess"
-															message:@"iAssess provides a quick way to log sightings of Invasive Alien Species (IAS). See http://ias-ess.appspot.com for more details."
+															message:@"iAssess provides a quick way to log sightings of Invasive Alien Species (IAS). See http://ias-ess.org for more details."
 														   delegate:nil
 												  cancelButtonTitle:@"OK"
 												  otherButtonTitles:nil];
@@ -266,7 +266,7 @@
 			[alert show];
 		}
 		if (indexPath.row == 2){
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://ias-ess.appspot.com"]];
+			[[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.ias-ess.org"]];
 		}
 	}
 	[tv deselectRowAtIndexPath:indexPath animated:YES];
